@@ -1,1 +1,19 @@
-{}
+{
+  "nav": {
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "services": "الخدمات",
+    "team": "فريقنا",
+    "contact": "اتصل بنا"
+  },
+  "footer": {
+    "emailLabel": "البريد الإلكتروني",
+    "emailPlaceholder": "*أدخل بريدًا إلكترونيًا صالحًا",
+    "subscribeButton": "اشترك",
+    "phone": "01085544833",
+    "companyEmail": "info@itechs.co",
+    "addressLine1": "10 شارع أمين زكي",
+    "addressLine2": "مصر الجديدة، القاهرة، مصر.",
+    "copyright": "حقوق النشر © 2024 ايتكس العربية. جميع الحقوق محفوظة."
+  }
+}

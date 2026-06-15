@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
 
 @font-face {
   font-family: 'Gill Sans';
@@ -17,6 +16,14 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+}
+
+html[lang="en"] {
+  font-family: var(--font-en);
+}
+
+html[lang="ar"] {
+  font-family: var(--font-ar);
 }
 
 @theme {
