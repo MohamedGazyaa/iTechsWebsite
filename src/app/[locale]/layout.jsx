@@ -10,8 +10,9 @@ export function generateStaticParams() {
 }
 
 export const metadata = {
-  title: "iTechs",
+  title: "iTechs Arabia",
   description: "iTechs company website",
+  icons: { icon: '/assets/logo/favicon.jpg' },
 };
 
 export default async function RootLayout({ children, params }) {

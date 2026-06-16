@@ -4,10 +4,26 @@ import { useState } from 'react';
 
 export default function SubscribeForm({ emailLabel, emailPlaceholder, subscribeButton }) {
   const [email, setEmail] = useState('');
+  const [status, setStatus] = useState('idle'); // idle | loading | success
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    // Backend integration will be added later
+    setStatus('loading');
+
+    const res = await fetch('/api/subscribe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email }),
+    });
+
+    await res.json();
+
+    if (res.ok) {
+      setStatus('success');
+      setEmail('');
+    } else {
+      setStatus('idle');
+    }
   }
 
   return (
@@ -22,13 +38,16 @@ export default function SubscribeForm({ emailLabel, emailPlaceholder, subscribeB
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder={emailPlaceholder}
-          className="w-full rounded-full bg-white ps-4 pe-36 py-2.5 text-gray-700 placeholder-gray-400 outline-none text-sm"
+          required
+          disabled={status === 'loading' || status === 'success'}
+          className="w-full rounded-full bg-white ps-4 pe-36 py-2.5 text-gray-700 placeholder-gray-400 outline-none text-sm disabled:opacity-60"
         />
         <button
           type="submit"
-          className="absolute inset-e-0 top-1/2 -translate-y-1/2 px-5 py-2 bg-white border-[6px] border-itechsBlue text-itechsBlue font-bold text-sm rounded-full whitespace-nowrap cursor-pointer hover:bg-itechsSkyBlue transition-colors"
+          disabled={status === 'loading' || status === 'success'}
+          className="absolute inset-e-0 top-1/2 -translate-y-1/2 px-5 py-2 bg-white border-[6px] border-itechsBlue text-itechsBlue font-bold text-sm rounded-full whitespace-nowrap cursor-pointer hover:bg-itechsSkyBlue transition-colors disabled:cursor-not-allowed disabled:opacity-60"
         >
-          {subscribeButton}
+          {status === 'loading' ? '...' : subscribeButton}
         </button>
       </div>
     </form>
