@@ -6,6 +6,24 @@
     "team": "Our Team",
     "contact": "Contact Us"
   },
+  "landingHero": {
+    "heading": "Are you Ready to Revolutionize your Decision-Making Process?",
+    "subtitle": "At iTechs Arabia, we are driven by our passion for data and value creation. With a focus on quality and reliability, we cater to diverse sectors and industries."
+  },
+  "solutionsHero": {
+    "heading1": "Providing Data-driven Solutions that",
+    "heading2": "Optimize our Partners' Decisions and Objectives",
+    "geospatialTitle": "Geospatial Solutions",
+    "geospatialDesc": "Empower organizations and individuals to gather, analyze, visualize, and share spatial data for various purposes. As an ESRI partner, we utilize cutting-edge technology to create and analyze spatial data for applications such as optimizing logistics and transportation, enhancing public safety and security, monitoring the environment, urban planning, disaster management, and more.",
+    "defenseTitle": "Defense Command & Control Applications",
+    "defenseDesc": "iTechs Arabia specializes in providing C2 and Operations Centre solutions that enable governments and organizations to efficiently manage and monitor complex systems from a centralized location. Our solutions offer real-time monitoring, predictive analytics, and automated response capabilities, empowering clients to achieve greater efficiency and control over their operations.",
+    "vrarTitle": "VR/AR Solutions",
+    "vrarDesc": "Audio visual solutions streamline communication, enhance engagement, and boost productivity through clearer audio, vivid visuals, and efficient collaboration tools. They offer cost savings, a technological competitive edge, and adaptability to evolving needs, making them essential for optimizing communication and efficiency across diverse sectors."
+  },
+  "mottoHero": {
+    "heading": "Empowering Partners with Data-Driven Excellence",
+    "subtitle": "iTechs Arabia stands at the forefront of the industry, offering a comprehensive suite of cutting-edge technological services. Our primary focus is to seamlessly integrate robust solutions into the operations of organizations, ensuring they function optimally in today's dynamic landscape. Our core values of persistence, commitment, and transparency guide every project, enhancing real-time understanding and decision-making. Leveraging the latest technologies and tools, our dedicated team collaborates closely with clients to address global challenges effectively."
+  },
   "footer": {
     "emailLabel": "Email",
     "emailPlaceholder": "*Enter a valid email address",

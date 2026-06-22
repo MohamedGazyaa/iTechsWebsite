@@ -1,7 +1,13 @@
+import LandingHero from "./_components/LandingHero";
+import MottoHero from "./_components/MottoHero";
+import SolutionsHero from "./_components/SolutionsHero";
+
 export default function HomePage() {
   return (
-   <div>
-    Home page
-    </div>
+    <main>
+      <LandingHero />
+      <MottoHero />
+      <SolutionsHero />
+    </main>
   );
 }

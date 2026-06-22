@@ -6,6 +6,24 @@
     "team": "فريقنا",
     "contact": "اتصل بنا"
   },
+  "landingHero": {
+    "heading": "نص العنوان",
+    "subtitle": "نص العنوان الفرعي"
+  },
+  "solutionsHero": {
+    "heading1": "نص العنوان الرئيسي",
+    "heading2": "نص العنوان الفرعي هنا",
+    "geospatialTitle": "الحلول الجغرافية المكانية",
+    "geospatialDesc": "نص وصف الحل هنا.",
+    "defenseTitle": "تطبيقات القيادة والسيطرة الدفاعية",
+    "defenseDesc": "نص وصف الحل هنا.",
+    "vrarTitle": "حلول الواقع الافتراضي والمعزز",
+    "vrarDesc": "نص وصف الحل هنا."
+  },
+  "mottoHero": {
+    "heading": "نص العنوان الرئيسي",
+    "subtitle": "نص العنوان الفرعي هنا."
+  },
   "footer": {
     "emailLabel": "البريد الإلكتروني",
     "emailPlaceholder": "*أدخل بريدًا إلكترونيًا صالحًا",
