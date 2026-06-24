@@ -24,6 +24,26 @@
     "heading": "Empowering Partners with Data-Driven Excellence",
     "subtitle": "iTechs Arabia stands at the forefront of the industry, offering a comprehensive suite of cutting-edge technological services. Our primary focus is to seamlessly integrate robust solutions into the operations of organizations, ensuring they function optimally in today's dynamic landscape. Our core values of persistence, commitment, and transparency guide every project, enhancing real-time understanding and decision-making. Leveraging the latest technologies and tools, our dedicated team collaborates closely with clients to address global challenges effectively."
   },
+  "aboutUs": {
+    "title": "About Us",
+    "p1": "iTechs Arabia stands at the forefront of the industry, offering a comprehensive suite of cutting-edge technological services. Our primary focus is to seamlessly integrate robust solutions into the operations of organizations, ensuring they function optimally in today's dynamic landscape.",
+    "p2": "Our core values of persistence, commitment, and transparency guide every project, enhancing real-time understanding and decision-making. Leveraging the latest technologies and tools, our dedicated team collaborates closely with clients to address global challenges effectively.",
+    "p3": "Through strategic partnerships and a growing portfolio of world-class components, we ensure that our technologies and services are not only compatible with all types of businesses but also robust, affordable, and provide a positive return on investment. Each solution we offer brings a wide range of pre-proven, pre-integrated functionality, supported by global services that enable rapid growth and ongoing success. At iTechs Arabia, our commitment is unwavering - to propel businesses forward.",
+    "p4": "Each solution we offer brings a wide range of pre-proven, pre-integrated functionality, supported by global services that enable rapid growth and ongoing success. At iTechs Arabia, our commitment is unwavering - to propel businesses forward."
+  },
+  "technologies": {
+    "title": "Technologies We Utilize",
+    "subtitle": "Discover the Cutting-Edge Technologies that fuel our Company's Innovative Solutions",
+    "frontendLayer": "Frontend Layer",
+    "backendLayer": "Backend Layer",
+    "dataWarehouse": "Data Warehouse"
+  },
+  "visionMission": {
+    "visionTitle": "Vision",
+    "visionText": "Our vision at iTechs Arabia is to lead as the primary provider of diverse software development and data-driven technological solutions for it to be informative, reliable, accessible, and user-friendly for all, empowering businesses and organizations through continuous innovation and a dedication to excellence.",
+    "missionTitle": "Mission",
+    "missionText": "Central to our ethos are our core values of persistence, commitment, and transparency, which serve as guiding principles in every project we undertake. Whether it's an internal initiative or an external collaboration, our overarching mission remains the same - to facilitate real-time understanding and enable effective decision-making through the fusion of our services for the highest optimization of business processes."
+  },
   "footer": {
     "emailLabel": "Email",
     "emailPlaceholder": "*Enter a valid email address",
