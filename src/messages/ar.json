@@ -38,6 +38,14 @@
     "backendLayer": "طبقة الخادم",
     "dataWarehouse": "مستودع البيانات"
   },
+  "services": {
+    "title": "خدماتنا"
+  },
+  "servicesPage": {
+    "title": "خدماتنا",
+    "subtitle": "استكشف مجموعتنا الكاملة من الخدمات التقنية المتطورة.",
+    "moreInfoAriaLabel": "مزيد من المعلومات حول {title}"
+  },
   "visionMission": {
     "visionTitle": "رؤيتنا",
     "visionText": "نص الرؤية هنا.",

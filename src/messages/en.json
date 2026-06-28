@@ -38,6 +38,14 @@
     "backendLayer": "Backend Layer",
     "dataWarehouse": "Data Warehouse"
   },
+  "services": {
+    "title": "Our Services"
+  },
+  "servicesPage": {
+    "title": "Our Services",
+    "subtitle": "Explore our full range of cutting-edge technological services.",
+    "moreInfoAriaLabel": "More information about {title}"
+  },
   "visionMission": {
     "visionTitle": "Vision",
     "visionText": "Our vision at iTechs Arabia is to lead as the primary provider of diverse software development and data-driven technological solutions for it to be informative, reliable, accessible, and user-friendly for all, empowering businesses and organizations through continuous innovation and a dedication to excellence.",
