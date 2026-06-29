@@ -84,6 +84,29 @@
       }
     }
   },
+  "contactPage": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with us and we'll get back to you as soon as possible.",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phone": {
+      "label": "Phone Number",
+      "invalidError": "Please enter a valid phone number"
+    },
+    "email": "Email Address",
+    "description": "Message",
+    "countryCode": "Country code",
+    "submit": "Send Message",
+    "submitting": "Sending...",
+    "successMessage": "Your message has been sent! We'll be in touch shortly.",
+    "submitError": "Something went wrong. Please try again.",
+    "errors": {
+      "required": "This field is required",
+      "invalidEmail": "Please enter a valid email address",
+      "invalidPhone": "Please enter a valid phone number",
+      "lettersOnly": "This field must contain only letters"
+    }
+  },
   "footer": {
     "emailLabel": "Email",
     "emailPlaceholder": "*Enter a valid email address",
