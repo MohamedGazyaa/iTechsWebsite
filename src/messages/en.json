@@ -52,6 +52,38 @@
     "missionTitle": "Mission",
     "missionText": "Central to our ethos are our core values of persistence, commitment, and transparency, which serve as guiding principles in every project we undertake. Whether it's an internal initiative or an external collaboration, our overarching mission remains the same - to facilitate real-time understanding and enable effective decision-making through the fusion of our services for the highest optimization of business processes."
   },
+  "team": {
+    "carouselLabel": "Team members",
+    "prevMember": "Previous team member",
+    "nextMember": "Next team member",
+    "members": {
+      "ali": {
+        "name": "Ali Hamouda",
+        "title": "Founder",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      "amr": {
+        "name": "Amr Rostom",
+        "title": "Software Engineer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      "ahd": {
+        "name": "Ahd Islam",
+        "title": "UI/UX Designer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      "aly": {
+        "name": "Aly Islam",
+        "title": "Backend Engineer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      "alaa": {
+        "name": "Alaa Khalil",
+        "title": "Project Manager",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }
+    }
+  },
   "footer": {
     "emailLabel": "Email",
     "emailPlaceholder": "*Enter a valid email address",
