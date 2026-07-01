@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+import { HEADING_SECTION, BODY_TEXT } from "@/lib/typography";
 
 const layers = [
   {
@@ -81,10 +82,10 @@ export default async function Technologies() {
       <div className="flex-1 py-8 px-6 md:py-14 md:px-8 lg:px-20">
 
         {/* Heading */}
-        <h2 className="text-2xl md:text-3xl font-bold text-itechsTeal mb-2">
+        <h2 className={`${HEADING_SECTION} text-itechsTeal mb-2`}>
           {t("title")}
         </h2>
-        <p className="text-sm md:text-base text-itechsBlue mb-6 md:mb-10">
+        <p className={`${BODY_TEXT} text-itechsBlue mb-6 md:mb-10`}>
           {t("subtitle")}
         </p>
 

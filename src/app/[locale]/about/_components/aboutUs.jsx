@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+import {BODY_TEXT, HEADING_PAGE } from "@/lib/typography";
 
 export default async function AboutUsSection() {
   const t = await getTranslations("aboutUs");
@@ -9,12 +10,12 @@ export default async function AboutUsSection() {
       <div className="grid grid-cols-1 lg:grid-cols-3">
         {/* Text — 2 parts */}
         <div className="lg:col-span-2 py-12 md:py-16 px-8 md:px-12 lg:px-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-itechsBlue">
+          <h2 className={`${HEADING_PAGE} text-itechsBlue`}>
             {t("title")}
           </h2>
           <div className="mt-12">
             {["p1", "p2", "p3", "p4"].map((key) => (
-              <p key={key} className="mt-6 text-sm md:text-base leading-none text-itechsBlue">
+              <p key={key} className={`mt-6 ${BODY_TEXT} leading-none text-itechsBlue`}>
                 {t(key)}
               </p>
             ))}

@@ -6,9 +6,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { teamMembers } from '@/data/team';
-
-// Retained for future use.
-const FRAME_STRIP_H = '10rem';
+import { BODY_TEXT } from '@/lib/typography';
 
 export default function TeamCarousel() {
   const t = useTranslations('team');
@@ -49,15 +47,15 @@ export default function TeamCarousel() {
         aria-hidden="true"
       />
 
-      <div className="flex items-start justify-between px-4 md:px-8">
+      <div className="flex items-start justify-center gap-4 md:justify-between md:gap-0 px-4 md:px-8 min-w-0">
 
         {/* Left chevron — shifts list left: right neighbor → center (goNext) */}
         <button
           onClick={goNext}
           aria-label={t('nextMember')}
-          className="shrink-0 h-28 flex items-center p-2 text-itechsBlue hover:text-itechsTeal transition-colors"
+          className="shrink-0 h-20 md:h-28 flex items-center p-1 md:p-2 text-itechsBlue hover:text-itechsTeal transition-colors"
         >
-          <FontAwesomeIcon icon={startIcon} className="text-xl" />
+          <FontAwesomeIcon icon={startIcon} className="text-lg md:text-xl" />
         </button>
 
         {/* Prev neighbor — desktop only */}
@@ -87,7 +85,7 @@ export default function TeamCarousel() {
           }`}
         >
           {/* Frame wrapper — bg-itechsSkyBlue masks the absolute line; layer a per-member photo here in the future */}
-          <div className="relative w-44 h-44 bg-itechsSkyBlue">
+          <div className="relative w-28 h-28 md:w-44 md:h-44 bg-itechsSkyBlue">
             <Image
               src="/assets/elements/frame.png"
               fill
@@ -102,7 +100,7 @@ export default function TeamCarousel() {
           <p className="text-sm font-semibold text-itechsTeal text-center mt-2">
             {t(`members.${active.id}.title`)}
           </p>
-          <p className="text-sm text-itechsBlue/70 text-center leading-relaxed max-w-60">
+          <p className={`${BODY_TEXT} text-itechsBlue/70 text-center leading-relaxed max-w-40 md:max-w-60`}>
             {t(`members.${active.id}.description`)}
           </p>
         </div>
@@ -130,9 +128,9 @@ export default function TeamCarousel() {
         <button
           onClick={goPrev}
           aria-label={t('prevMember')}
-          className="shrink-0 h-28 flex items-center p-2 text-itechsBlue hover:text-itechsTeal transition-colors"
+          className="shrink-0 h-20 md:h-28 flex items-center p-1 md:p-2 text-itechsBlue hover:text-itechsTeal transition-colors"
         >
-          <FontAwesomeIcon icon={endIcon} className="text-xl" />
+          <FontAwesomeIcon icon={endIcon} className="text-lg md:text-xl" />
         </button>
 
       </div>

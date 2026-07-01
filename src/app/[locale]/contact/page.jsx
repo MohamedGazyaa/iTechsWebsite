@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import ContactForm from "./_components/ContactForm";
+import { HEADING_PAGE, BODY_TEXT } from "@/lib/typography";
 
 export default async function ContactPage() {
   const t = await getTranslations("contactPage");
@@ -13,7 +14,7 @@ export default async function ContactPage() {
       >
 
         {/* Left structural column */}
-        <div className="shrink-0 max-w-24">
+        <div className="shrink-0 w-12 md:w-16 lg:w-24">
           <Image
             src="/assets/elements/verticalColumnWhite.png"
             alt=""
@@ -26,17 +27,17 @@ export default async function ContactPage() {
 
         {/* Content */}
         <div className="flex-1 py-16 px-8 lg:px-16">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-itechsBlue mb-4">
+          <h1 className={`${HEADING_PAGE} text-itechsBlue mb-4`}>
             {t("title")}
           </h1>
-          <p className="text-base md:text-lg text-itechsBlue/70 mb-12 max-w-xl">
+          <p className={`${BODY_TEXT} text-itechsBlue/70 mb-12 max-w-xl`}>
             {t("subtitle")}
           </p>
           <ContactForm />
         </div>
 
         {/* Right structural column */}
-        <div className="shrink-0 max-w-24">
+        <div className="shrink-0 w-12 md:w-16 lg:w-24">
           <Image
             src="/assets/elements/verticalColumnWhite.png"
             alt=""

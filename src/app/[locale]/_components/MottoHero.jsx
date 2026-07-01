@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { getTranslations, getLocale } from "next-intl/server";
+import { HEADING_SECTION } from "@/lib/typography";
 
 export default async function MottoHero() {
   const [t, locale] = await Promise.all([
@@ -22,8 +23,8 @@ export default async function MottoHero() {
       />
 
       <div className="absolute inset-0 z-10 flex flex-col justify-center ps-6 md:ps-12 lg:ps-16">
-        <div className="w-[45%]">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-itechsBlue">
+        <div className="w-[85%] sm:w-[70%] md:w-[55%] lg:w-[45%]">
+          <h2 className={`${HEADING_SECTION} text-itechsBlue`}>
             {t("heading")}
           </h2>
           <p className="mt-6 text-sm md:text-base lg:text-lg leading-tight text-itechsBlue text-justify">

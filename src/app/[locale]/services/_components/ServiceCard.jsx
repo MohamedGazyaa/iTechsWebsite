@@ -69,7 +69,7 @@ export default function ServiceCard({ title, description, icon, href }) {
             />
           </div>
 
-          <h3 className="text-itechsBlue font-semibold text-center uppercase tracking-wide text-xs md:text-sm min-h-10 flex items-center justify-center">
+          <h3 className="text-itechsBlue font-semibold text-center uppercase tracking-wide text-xs md:text-sm line-clamp-3 leading-tight min-h-14">
             {title}
           </h3>
         </div>
