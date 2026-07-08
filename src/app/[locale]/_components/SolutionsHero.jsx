@@ -61,15 +61,6 @@ export default async function SolutionsHero() {
           */}
           <div className="relative h-full w-72 lg:w-96 me-2">
 
-            {/* Line 1 */}
-            <div className="absolute inset-s-5.5 top-0 w-0.5 h-[calc(15%-1.5rem-8px)] bg-itechsTeal" />
-            {/* Line 2 */}
-            <div className="absolute inset-s-5.5 top-[calc(15%+1.5rem+8px)] w-0.5 h-[calc(35%-3rem-16px)] bg-itechsTeal" />
-            {/* Line 3 */}
-            <div className="absolute inset-s-5.5 top-[calc(50%+1.5rem+8px)] w-0.5 h-[calc(35%-3rem-16px)] bg-itechsTeal" />
-            {/* Line 4 */}
-            <div className="absolute inset-s-5.5 top-[calc(85%+1.5rem+8px)] w-0.5 h-[calc(15%-1.5rem-8px)] bg-itechsTeal" />
-
             {solutions.map((key, i) => {
               const pct = 15 + i * 35;
               const top = `calc(${pct}% - 1.5rem)`;
@@ -102,7 +93,7 @@ export default async function SolutionsHero() {
 
           {/* Chevron */}
           <div className="flex items-center px-4">
-            <Link href="/services" className="text-itechsBlue/40 hover:text-itechsBlue transition-colors">
+            <Link href="/services" className="text-itechsSkyBlue/60 hover:text-itechsSkyBlue transition-colors">
               <FontAwesomeIcon
                 icon={isRtl ? faChevronLeft : faChevronRight}
                 className="text-2xl"

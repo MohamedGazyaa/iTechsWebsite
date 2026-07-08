@@ -13,6 +13,7 @@ const INITIAL_VALUES = {
   firstName: '',
   lastName: '',
   phone: '',
+  company: '',
   email: '',
   description: '',
 };
@@ -30,6 +31,9 @@ function validate(values, t) {
         ? t('errors.lettersOnly')
         : undefined,
     phone: !values.phone
+      ? t('errors.required')
+      : undefined,
+    company: !values.company.trim()
       ? t('errors.required')
       : undefined,
     email: !values.email.trim()
@@ -129,6 +133,7 @@ export default function ContactForm() {
           firstName: values.firstName,
           lastName: values.lastName,
           phone: values.phone,
+          company: values.company,
           email: values.email,
           description: values.description,
         }),
@@ -193,6 +198,20 @@ export default function ContactForm() {
           onBlur={handlePhoneBlur}
           aria-invalid={!!(errors.phone || phoneError)}
           className={(errors.phone || phoneError) ? 'PhoneInput--error' : undefined}
+        />
+      </Field>
+
+      {/* Company */}
+      <Field id="company" label={t('company')} error={errors.company}>
+        <input
+          id="company"
+          name="company"
+          type="text"
+          value={values.company}
+          onChange={handleChange}
+          onBlur={handleBlur}
+          className={errors.company ? inputError : inputNormal}
+          aria-invalid={!!errors.company}
         />
       </Field>
 

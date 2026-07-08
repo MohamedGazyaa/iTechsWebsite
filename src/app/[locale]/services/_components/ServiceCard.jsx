@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useLayoutEffect, useRef } from "react";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
@@ -10,7 +10,10 @@ export default function ServiceCard({ title, description, icon, href }) {
   const t = useTranslations("servicesPage");
   const [isOpen, setIsOpen] = useState(false);
   const [canHover, setCanHover] = useState(false);
+  const [placement, setPlacement] = useState("center");
   const tooltipRef = useRef(null);
+  const iconRef = useRef(null);
+  const cardRef = useRef(null);
   const tooltipId = `tooltip-${href.replace(/\//g, "-")}`;
 
   useEffect(() => {
@@ -24,7 +27,7 @@ export default function ServiceCard({ title, description, icon, href }) {
   useEffect(() => {
     if (!isOpen) return;
     function handleClickOutside(e) {
-      if (tooltipRef.current && !tooltipRef.current.contains(e.target)) {
+      if (cardRef.current && !cardRef.current.contains(e.target)) {
         setIsOpen(false);
       }
     }
@@ -41,8 +44,24 @@ export default function ServiceCard({ title, description, icon, href }) {
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [isOpen]);
 
+  useLayoutEffect(() => {
+    if (!isOpen || !iconRef.current || !tooltipRef.current) return;
+    const iconRect = iconRef.current.getBoundingClientRect();
+    const tooltipWidth = tooltipRef.current.offsetWidth;
+    const iconCenterX = iconRect.left + iconRect.width / 2;
+    const margin = 8;
+    const centeredLeft = iconCenterX - tooltipWidth / 2;
+    const centeredRight = iconCenterX + tooltipWidth / 2;
+    let next;
+    if (centeredRight > window.innerWidth - margin) next = "end";
+    else if (centeredLeft < margin) next = "start";
+    else next = "center";
+    setPlacement((prev) => (prev === next ? prev : next));
+  }, [isOpen]);
+
   return (
     <div
+      ref={cardRef}
       className="relative h-full flex flex-col items-center justify-start cursor-pointer"
       onPointerEnter={() => { if (canHover) setIsOpen(true); }}
       onPointerLeave={() => { if (canHover) setIsOpen(false); }}
@@ -50,8 +69,11 @@ export default function ServiceCard({ title, description, icon, href }) {
       <Link href={href} className="block w-full p-4 cursor-pointer">
         <div className="flex flex-col items-center gap-3">
 
-          {/* Icon container — relative so tooltip anchors to its bottom-end corner */}
-          <div className="relative w-24 h-24 md:w-28 md:h-28 flex items-center justify-center shrink-0">
+          {/* Icon container */}
+          <div
+            ref={iconRef}
+            className="relative w-24 h-24 md:w-28 md:h-28 flex items-center justify-center shrink-0"
+          >
             <Image
               src={icon}
               alt={title}
@@ -64,6 +86,7 @@ export default function ServiceCard({ title, description, icon, href }) {
               ref={tooltipRef}
               id={tooltipId}
               isOpen={isOpen}
+              placement={placement}
               title={title}
               description={description}
             />

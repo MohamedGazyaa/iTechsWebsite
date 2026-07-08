@@ -94,6 +94,7 @@
       "label": "Phone Number",
       "invalidError": "Please enter a valid phone number"
     },
+    "company": "Company",
     "email": "Email Address",
     "description": "Message",
     "countryCode": "Country code",

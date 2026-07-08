@@ -1,12 +1,18 @@
 import { forwardRef } from "react";
 
-const CardTooltip = forwardRef(function CardTooltip({ id, isOpen, title, description }, ref) {
+const placementClass = {
+  center: "start-1/2 -translate-x-1/2 rtl:translate-x-1/2",
+  start: "start-0",
+  end: "end-0",
+};
+
+const CardTooltip = forwardRef(function CardTooltip({ id, isOpen, placement = "center", title, description }, ref) {
   return (
     <div
       ref={ref}
       id={id}
       role="tooltip"
-      className={`absolute top-full inset-s-1/2 z-30 transition-opacity duration-200 ${
+      className={`absolute top-full ${placementClass[placement]} z-30 transition-opacity duration-200 ${
         isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
       }`}
       onClick={(e) => { e.preventDefault(); e.stopPropagation(); }}

@@ -6,10 +6,22 @@ export default async function VisionMission() {
   const t = await getTranslations("visionMission");
 
   return (
-    <section className="w-full bg-itechsBlue overflow-hidden flex flex-row">
+    <section className="w-full bg-itechsBlue overflow-hidden flex flex-col lg:flex-row">
 
-      {/* Left column — structural left border */}
-      <div className="shrink-0 w-12 md:w-16 lg:w-24">
+      {/* Top bar — mobile only */}
+      <div className="shrink-0 h-16 overflow-hidden lg:hidden">
+        <Image
+          src="/assets/elements/horizontalColumnBlue.png"
+          alt=""
+          width={1600}
+          height={100}
+          className="w-full h-16 object-cover object-bottom brightness-65 opacity-85"
+          aria-hidden="true"
+        />
+      </div>
+
+      {/* Left column — desktop only */}
+      <div className="hidden lg:block shrink-0 lg:w-24">
         <Image
           src="/assets/elements/verticalColumnBlue.png"
           alt=""
@@ -58,14 +70,26 @@ export default async function VisionMission() {
 
       </div>
 
-      {/* Right column — structural right border */}
-      <div className="shrink-0 w-12 md:w-16 lg:w-24">
+      {/* Right column — desktop only */}
+      <div className="hidden lg:block shrink-0 lg:w-24">
         <Image
           src="/assets/elements/verticalColumnBlue.png"
           alt=""
           width={100}
           height={1600}
           className="h-full w-auto -me-3 brightness-65 opacity-85"
+          aria-hidden="true"
+        />
+      </div>
+
+      {/* Bottom bar — mobile only */}
+      <div className="shrink-0 h-16 overflow-hidden lg:hidden">
+        <Image
+          src="/assets/elements/horizontalColumnBlue.png"
+          alt=""
+          width={1600}
+          height={100}
+          className="w-full h-16 object-cover object-top brightness-65 opacity-85"
           aria-hidden="true"
         />
       </div>

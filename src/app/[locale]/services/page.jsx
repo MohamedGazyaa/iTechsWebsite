@@ -11,11 +11,23 @@ export default async function ServicesPage({ params }) {
     <main>
       <section
         aria-label={t("title")}
-        className="w-full min-h-screen bg-itechsSkyBlue overflow-hidden flex flex-row"
+        className="w-full min-h-screen bg-itechsSkyBlue overflow-hidden flex flex-col lg:flex-row"
       >
 
-        {/* Left structural column */}
-        <div className="shrink-0 w-12 md:w-16 lg:w-24">
+        {/* Top bar — mobile only */}
+        <div className="shrink-0 h-16 overflow-hidden lg:hidden">
+          <Image
+            src="/assets/elements/horizontalColumnWhite.png"
+            alt=""
+            width={1600}
+            height={100}
+            className="w-full h-16 object-cover object-bottom mix-blend-multiply"
+            aria-hidden="true"
+          />
+        </div>
+
+        {/* Left column — desktop only */}
+        <div className="hidden lg:block shrink-0 lg:w-24">
           <Image
             src="/assets/elements/verticalColumnWhite.png"
             alt=""
@@ -37,14 +49,26 @@ export default async function ServicesPage({ params }) {
           <ServicesList locale={locale} />
         </div>
 
-        {/* Right structural column */}
-        <div className="shrink-0 w-12 md:w-16 lg:w-24">
+        {/* Right column — desktop only */}
+        <div className="hidden lg:block shrink-0 lg:w-24">
           <Image
             src="/assets/elements/verticalColumnWhite.png"
             alt=""
             width={100}
             height={1600}
             className="h-full w-auto -me-3 mix-blend-multiply"
+            aria-hidden="true"
+          />
+        </div>
+
+        {/* Bottom bar — mobile only */}
+        <div className="shrink-0 h-16 overflow-hidden lg:hidden">
+          <Image
+            src="/assets/elements/horizontalColumnWhite.png"
+            alt=""
+            width={1600}
+            height={100}
+            className="w-full h-16 object-cover object-top mix-blend-multiply"
             aria-hidden="true"
           />
         </div>

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Link, usePathname, useRouter } from '../i18n/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
+import { useLocale } from 'next-intl';
 
 const languages = [
   { locale: 'en', label: 'English' },
@@ -14,6 +15,8 @@ const languages = [
 export default function NavLinks({ items }) {
   const pathname = usePathname();
   const router = useRouter();
+  const locale = useLocale();
+  const localeLabel = { en: "EN", ar: "ع" }[locale];
   const [open, setOpen] = useState(false);
   const ref = useRef(null);
 
@@ -42,7 +45,7 @@ export default function NavLinks({ items }) {
                 alt=""
                 width={48}
                 height={48}
-                className="mt-1 w-5 h-5 object-contain"
+                className="w-5 h-5 object-contain"
               />
             )}
             <Link
@@ -63,6 +66,7 @@ export default function NavLinks({ items }) {
           className="flex items-center gap-2 text-base sm:text-lg text-itechsBlue font-medium hover:text-itechsTeal transition-colors cursor-pointer"
         >
           <FontAwesomeIcon icon={faEarthAmericas} className="w-5 h-5" />
+          <span className={`text-sm ${locale === "ar" ? "-mt-1" : ""}`}>{localeLabel}</span>
         </button>
 
         {open && (
