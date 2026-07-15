@@ -1,15 +1,16 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import TeamCarousel from "./_components/TeamCarousel";
-import { HEADING_PAGE } from "@/lib/typography";
+import ProductsList from "./_components/productsList";
+import { HEADING_PAGE, BODY_TEXT } from "@/lib/typography";
 
-export default async function TeamPage() {
-  const t = await getTranslations("nav");
+export default async function ProductsPage({ params }) {
+  const { locale } = await params;
+  const t = await getTranslations("productsPage");
 
   return (
     <main>
       <section
-        aria-label={t("team")}
+        aria-label={t("title")}
         className="w-full min-h-screen bg-itechsSkyBlue overflow-hidden flex flex-col lg:flex-row"
       >
 
@@ -38,11 +39,14 @@ export default async function TeamPage() {
         </div>
 
         {/* Content */}
-        <div className="flex-1 min-w-0 py-16 px-8 lg:px-16">
-          <h1 className={`${HEADING_PAGE} text-itechsBlue mb-12`}>
-            {t("team")}
+        <div className="flex-1 py-16 px-8 lg:px-16">
+          <h1 className={`${HEADING_PAGE} text-itechsBlue mb-4`}>
+            {t("title")}
           </h1>
-          <TeamCarousel />
+          <p className={`${BODY_TEXT} text-itechsBlue mb-12`}>
+            {t("subtitle")}
+          </p>
+          <ProductsList locale={locale} />
         </div>
 
         {/* Right column — desktop only */}

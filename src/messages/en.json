@@ -2,8 +2,8 @@
   "nav": {
     "home": "Home",
     "about": "About Us",
-    "services": "Services",
-    "team": "Our Team",
+    "solutions": "Solutions",
+    "products": "Products",
     "contact": "Contact Us"
   },
   "landingHero": {
@@ -39,13 +39,14 @@
     "backendLayer": "Backend Layer",
     "dataWarehouse": "Data Warehouse"
   },
-  "services": {
-    "title": "Our Services"
-  },
   "servicesPage": {
-    "title": "Our Services",
-    "subtitle": "Explore our full range of cutting-edge technological services.",
+    "title": "Our Solutions",
+    "subtitle": "Explore our full range of cutting-edge technological solutions.",
     "moreInfoAriaLabel": "More information about {title}"
+  },
+  "productsPage": {
+    "title": "Our Products",
+    "subtitle": "Placeholder subtitle for the products page."
   },
   "visionMission": {
     "visionTitle": "Vision",
@@ -54,33 +55,29 @@
     "missionText": "Central to our ethos are our core values of persistence, commitment, and transparency, which serve as guiding principles in every project we undertake. Whether it's an internal initiative or an external collaboration, our overarching mission remains the same - to facilitate real-time understanding and enable effective decision-making through the fusion of our services for the highest optimization of business processes."
   },
   "team": {
+    "title": "Our Team",
     "carouselLabel": "Team members",
     "prevMember": "Previous team member",
     "nextMember": "Next team member",
     "members": {
-      "ali": {
-        "name": "Ali Hamouda",
-        "title": "Founder",
+      "haytham": {
+        "name": "Haytham ElGharabawy",
+        "title": "title",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
-      "amr": {
-        "name": "Amr Rostom",
-        "title": "Software Engineer",
+      "mahmoud": {
+        "name": "Mahmoud ElBanna",
+        "title": "title",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
-      "ahd": {
-        "name": "Ahd Islam",
-        "title": "UI/UX Designer",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      },
-      "aly": {
-        "name": "Aly Islam",
-        "title": "Backend Engineer",
+      "mohamed": {
+        "name": "Mohamed Nabil",
+        "title": "title",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
       "alaa": {
         "name": "Alaa Khalil",
-        "title": "Project Manager",
+        "title": "title",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       }
     }
@@ -113,10 +110,10 @@
     "emailLabel": "Email",
     "emailPlaceholder": "*Enter a valid email address",
     "subscribeButton": "Subscribe",
-    "phone": "01085544833",
+    "phone": "+966 56 092 0068",
     "companyEmail": "info@itechs.co",
-    "addressLine1": "10 Amin Zaki St.",
-    "addressLine2": "Heliopolis, Cairo, Egypt.",
+    "addressLine1": "3832 King Abdullah Ibn Abdulaziz Saud Branch",
+    "addressLine2": "Al Mursalat District, Riyadh, Saudi Arabia.",
     "copyright": "COPYRIGHT © 2024 ITECHS ARABIA. ALL RIGHTS RESERVED."
   }
 }

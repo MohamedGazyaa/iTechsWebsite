@@ -37,7 +37,7 @@ export const services = [
     path: "forensics-and-cybersecurity-solutions",
     icon: "/assets/services/forensicsCyberSecuirty.png",
     title: {
-      en: "FORENSICS AND CYBERSECURITY SOLUTIONS",
+      en: "SECURITY SOLUTIONS",
       ar: "اسم مؤقت",
     },
     description: {
@@ -94,22 +94,10 @@ export const services = [
     },
   },
   {
-    path: "vr-ar-solutions",
-    icon: "/assets/services/VR-AR.png",
+    path: "digital-twin",
+    icon: "/assets/services/digitalTwin.png",
     title: {
-      en: "VR/AR SOLUTIONS",
-      ar: "اسم مؤقت",
-    },
-    description: {
-      en: "Placeholder description for the consulting service.",
-      ar: "نص توضيحي مؤقت لخدمة الاستشارات.",
-    },
-  },
-  {
-    path: "electromechanical-services",
-    icon: "/assets/services/electromechanical.png",
-    title: {
-      en: "ELECTROMECHANICAL SERVICES",
+      en: "DIGITAL TWIN",
       ar: "اسم مؤقت",
     },
     description: {

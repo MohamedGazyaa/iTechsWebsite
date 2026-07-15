@@ -35,7 +35,7 @@ export default async function Footer() {
           {/* Contact info */}
           <div className="flex gap-10 text-white text-sm">
             <div className="flex flex-col gap-1">
-              <span>{t('phone')}</span>
+              <span dir="ltr">{t('phone')}</span>
               <span>{t('companyEmail')}</span>
             </div>
             <div className="flex flex-col gap-1">

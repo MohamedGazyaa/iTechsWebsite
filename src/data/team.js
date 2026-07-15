@@ -3,9 +3,8 @@
 // This file holds only structure: stable ordering, ids, and image paths.
 
 export const teamMembers = [
-  { id: 'ali',  image: '/assets/elements/frame.png' },
-  { id: 'amr',  image: '/assets/elements/frame.png' },
-  { id: 'ahd',  image: '/assets/elements/frame.png' },
-  { id: 'aly',  image: '/assets/elements/frame.png' },
+  { id: 'haytham',  image: '/assets/elements/frame.png' },
+  { id: 'mahmoud',  image: '/assets/elements/frame.png' },
+  { id: 'mohamed',  image: '/assets/elements/frame.png' },
   { id: 'alaa', image: '/assets/elements/frame.png' },
 ];
