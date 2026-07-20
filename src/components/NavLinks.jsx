@@ -52,7 +52,7 @@ export default function NavLinks() {
             )}
             <Link
               href={href}
-              className="text-lg sm:text-xl text-itechsBlue font-medium hover:text-itechsTeal transition-colors"
+              className="text-lg sm:text-xl leading-none text-itechsBlue font-medium hover:text-itechsTeal transition-colors"
             >
               {t(label)}
             </Link>

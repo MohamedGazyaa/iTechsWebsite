@@ -4,6 +4,6 @@ import { notFound } from 'next/navigation';
 // /en/ayhaga, /ar/foo/bar) and immediately reports not-found, so the nearest
 // boundary — the localized app/[locale]/not-found.jsx — renders instead of the
 // bare root fallback.
-export default function CatchAll() {
+export default async function CatchAll() {
   notFound();
 }

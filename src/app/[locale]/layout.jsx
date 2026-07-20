@@ -1,5 +1,6 @@
 import '../globals.css'
 import { Alexandria } from 'next/font/google';
+import localFont from 'next/font/local';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { routing } from '../../i18n/routing';
@@ -10,6 +11,16 @@ const alexandria = Alexandria({
   subsets: ['arabic', 'latin'],
   variable: '--font-ar',
   display: 'swap',
+});
+
+const gillSans = localFont({
+  src: [
+    { path: '../../../public/fonts/GillSans.woff2', weight: '400', style: 'normal' },
+    { path: '../../../public/fonts/GillSansBold.woff2', weight: '700', style: 'normal' },
+  ],
+  variable: '--font-en',
+  display: 'swap',
+  fallback: ['Helvetica Neue', 'Arial', 'sans-serif'],
 });
 
 export function generateStaticParams() {
@@ -28,7 +39,7 @@ export default async function RootLayout({ children, params }) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} className={`h-full antialiased ${alexandria.variable}`}>
+    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} className={`h-full antialiased ${alexandria.variable} ${gillSans.variable}`}>
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider messages={messages}>
           <Header />

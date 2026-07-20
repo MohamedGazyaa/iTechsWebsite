@@ -108,7 +108,7 @@ export default function MobileNav() {
                   <Link
                     href={href}
                     onClick={() => setSidebarOpen(false)}
-                    className="text-xl font-medium text-itechsBlue hover:text-itechsTeal transition-colors"
+                    className="text-xl leading-none font-medium text-itechsBlue hover:text-itechsTeal transition-colors"
                   >
                     {t(label)}
                   </Link>
