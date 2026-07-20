@@ -32,8 +32,10 @@ export default async function RootLayout({ children, params }) {
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider messages={messages}>
           <Header />
-          {children}
-          <Footer />
+          <div id="page-content">
+            {children}
+            <Footer />
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>

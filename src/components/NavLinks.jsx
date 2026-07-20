@@ -5,14 +5,16 @@ import Image from 'next/image';
 import { Link, usePathname, useRouter } from '../i18n/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
+import { navItems } from '@/data/navigation';
 
 const languages = [
   { locale: 'en', label: 'English' },
   { locale: 'ar', label: 'العربية' },
 ];
 
-export default function NavLinks({ items }) {
+export default function NavLinks() {
+  const t = useTranslations('nav');
   const pathname = usePathname();
   const router = useRouter();
   const locale = useLocale();
@@ -35,7 +37,7 @@ export default function NavLinks({ items }) {
 
   return (
     <ul className="flex items-center gap-8 sm:gap-12">
-      {items.map(({ href, label }) => {
+      {navItems.map(({ href, label }) => {
         const isActive = href === '/' ? pathname === href : pathname.startsWith(href);
         return (
           <li key={href} className="flex items-center gap-1">
@@ -52,7 +54,7 @@ export default function NavLinks({ items }) {
               href={href}
               className="text-lg sm:text-xl text-itechsBlue font-medium hover:text-itechsTeal transition-colors"
             >
-              {label}
+              {t(label)}
             </Link>
           </li>
         );

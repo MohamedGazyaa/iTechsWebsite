@@ -106,6 +106,20 @@
       "lettersOnly": "This field must contain only letters"
     }
   },
+  "error": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred while loading this page. You can try again or return to the homepage.",
+    "retry": "Try again",
+    "home": "Go home"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "description": "The page you are looking for doesn't exist or has been moved.",
+    "backHome": "Go home"
+  },
+  "loading": {
+    "label": "Loading"
+  },
   "footer": {
     "emailLabel": "Email",
     "emailPlaceholder": "*Enter a valid email address",

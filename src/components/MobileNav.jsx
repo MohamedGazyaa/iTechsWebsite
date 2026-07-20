@@ -5,14 +5,17 @@ import Image from 'next/image';
 import { Link, usePathname, useRouter } from '../i18n/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark, faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
+import { navItems } from '@/data/navigation';
+import { INERT_TARGET_IDS } from '@/lib/inert-target-ids';
 
 const languages = [
   { locale: 'en', label: 'English' },
   { locale: 'ar', label: 'العربية' },
 ];
 
-export default function MobileNav({ items }) {
+export default function MobileNav() {
+  const t = useTranslations('nav');
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const langRef = useRef(null);
@@ -35,6 +38,20 @@ export default function MobileNav({ items }) {
     setSidebarOpen(false);
   }
 
+  // These elements are made inert imperatively via DOM APIs, not a JSX
+  // `inert` prop — do not also add inert={...} directly on page-content or
+  // mobile-logo in their own files, the two mechanisms would conflict.
+  useEffect(() => {
+    const elements = INERT_TARGET_IDS
+      .map((id) => document.getElementById(id))
+      .filter(Boolean);
+    elements.forEach((el) => {
+      if (sidebarOpen) el.setAttribute('inert', '');
+      else el.removeAttribute('inert');
+    });
+    return () => elements.forEach((el) => el.removeAttribute('inert'));
+  }, [sidebarOpen]);
+
   return (
     <>
       <button
@@ -54,9 +71,12 @@ export default function MobileNav({ items }) {
       )}
 
       {/* Sidebar */}
-      <div className={`fixed top-0 inset-s-0 h-full w-72 bg-itechsSkyBlue z-50 flex flex-col transition-transform duration-300 ease-in-out ${
-        sidebarOpen ? 'translate-x-0' : '-translate-x-full rtl:translate-x-full'
-      }`}>
+      <div
+        inert={!sidebarOpen}
+        className={`fixed top-0 inset-s-0 h-full w-60 bg-itechsSkyBlue z-50 flex flex-col transition-transform duration-300 ease-in-out ${
+          sidebarOpen ? 'translate-x-0' : '-translate-x-full rtl:translate-x-full'
+        }`}
+      >
 
         {/* Close button */}
         <div className="flex items-center justify-end px-4 py-4">
@@ -72,7 +92,7 @@ export default function MobileNav({ items }) {
         {/* Nav items */}
         <nav className="flex-1 px-6 py-4">
           <ul className="flex flex-col gap-6">
-            {items.map(({ href, label }) => {
+            {navItems.map(({ href, label }) => {
               const isActive = href === '/' ? pathname === href : pathname.startsWith(href);
               return (
                 <li key={href} className="flex items-center gap-2">
@@ -90,7 +110,7 @@ export default function MobileNav({ items }) {
                     onClick={() => setSidebarOpen(false)}
                     className="text-xl font-medium text-itechsBlue hover:text-itechsTeal transition-colors"
                   >
-                    {label}
+                    {t(label)}
                   </Link>
                 </li>
               );

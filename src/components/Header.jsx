@@ -1,20 +1,9 @@
 import Image from 'next/image';
 import { Link } from '../i18n/navigation';
-import { useTranslations } from 'next-intl';
 import NavLinks from './NavLinks';
 import MobileNav from './MobileNav';
 
 export default function Header() {
-  const t = useTranslations('nav');
-
-  const navItems = [
-    { href: '/', label: t('home') },
-    { href: '/about', label: t('about') },
-    { href: '/services', label: t('solutions') },
-    { href: '/products', label: t('products') },
-    { href: '/contact', label: t('contact') },
-  ];
-
   const logo = (
     <>
       <Image
@@ -39,8 +28,8 @@ export default function Header() {
 
       {/* Mobile */}
       <div className="flex lg:hidden items-center px-4 py-3">
-        <MobileNav items={navItems} />
-        <div className="flex-1 flex justify-center">
+        <MobileNav />
+        <div id="mobile-logo" className="flex-1 flex justify-center">
           <Link href="/" aria-label="iTechs — go to home page" className="inline-flex items-center">
             {logo}
           </Link>
@@ -54,7 +43,7 @@ export default function Header() {
           {logo}
         </Link>
         <nav>
-          <NavLinks items={navItems} />
+          <NavLinks />
         </nav>
       </div>
 

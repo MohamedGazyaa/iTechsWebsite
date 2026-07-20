@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scrollbar-gutter: stable both-edges;
+}
+
 @font-face {
   font-family: 'Gill Sans';
   src: url('/fonts/GillSans.woff2') format('woff2'),
