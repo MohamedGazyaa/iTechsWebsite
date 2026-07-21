@@ -22,9 +22,9 @@ const gillSans = localFont({
   display: 'swap',
   fallback: ['Helvetica Neue', 'Arial', 'sans-serif'],
   declarations: [
-    { prop: 'ascent-override', value: '76.90%' },
-    { prop: 'descent-override', value: '23.10%' },
-    { prop: 'line-gap-override', value: '14.11%' },
+    { prop: 'ascent-override', value: '81.90%' },
+  { prop: 'descent-override', value: '18.10%' },
+  { prop: 'line-gap-override', value: '14.11%' },
   ],
 });
 
