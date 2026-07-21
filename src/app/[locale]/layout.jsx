@@ -21,6 +21,11 @@ const gillSans = localFont({
   variable: '--font-en',
   display: 'swap',
   fallback: ['Helvetica Neue', 'Arial', 'sans-serif'],
+  declarations: [
+    { prop: 'ascent-override', value: '76.90%' },
+    { prop: 'descent-override', value: '23.10%' },
+    { prop: 'line-gap-override', value: '14.11%' },
+  ],
 });
 
 export function generateStaticParams() {
