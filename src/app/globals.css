@@ -2,6 +2,7 @@
 
 html {
   scrollbar-gutter: stable both-edges;
+  -webkit-text-size-adjust: 100%;
 }
 
 html[lang="en"] {
