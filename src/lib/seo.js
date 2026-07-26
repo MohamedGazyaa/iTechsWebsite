@@ -19,23 +19,29 @@ export function buildAlternates(path, currentLocale) {
   };
 }
 
-export function buildMetadata({ title, description, path, locale }) {
+export function buildOpenGraph({ title, description, path, locale }) {
   const brand = BRAND_NAME[locale] ?? BRAND_NAME.en;
-  const fullTitle = `${title} | ${brand}`;
   const ogLocale = locale === 'ar' ? 'ar_EG' : 'en_US';
 
   return {
+    type: 'website',
+    siteName: brand,
     title,
     description,
+    url: `/${locale}${path}`,
+    locale: ogLocale,
+    images: [OG_IMAGE[locale] ?? OG_IMAGE.en],
+  };
+}
+
+export function buildMetadata({ title, description, path, locale }) {
+  const brand = BRAND_NAME[locale] ?? BRAND_NAME.en;
+  const fullTitle = `${title} | ${brand}`;
+
+  return {
+    title: fullTitle,
+    description,
     alternates: buildAlternates(path, locale),
-    openGraph: {
-      type: 'website',
-      siteName: brand,
-      title: fullTitle,
-      description,
-      url: `/${locale}${path}`,
-      locale: ogLocale,
-      images: [OG_IMAGE[locale] ?? OG_IMAGE.en],
-    },
+    openGraph: buildOpenGraph({ title: fullTitle, description, path, locale }),
   };
 }

@@ -6,6 +6,7 @@ import { getMessages, setRequestLocale } from 'next-intl/server';
 import { routing } from '../../i18n/routing';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import { buildAlternates, buildOpenGraph } from '@/lib/seo';
 
 const alexandria = Alexandria({
   subsets: ['arabic', 'latin'],
@@ -15,7 +16,7 @@ const alexandria = Alexandria({
 
 const gillSans = localFont({
   src: [
-    { path: '../../../public/fonts/GillSans.woff2',  weight: '400', style: 'normal' },
+    { path: '../../../public/fonts/GillSans.woff2', weight: '400', style: 'normal' },
     { path: '../../../public/fonts/GillSansBold.woff2', weight: '700', style: 'normal' },
   ],
   variable: '--font-en',
@@ -23,26 +24,42 @@ const gillSans = localFont({
   fallback: ['Helvetica Neue', 'Arial', 'sans-serif'],
   declarations: [
     { prop: 'ascent-override', value: '81.90%' },
-  { prop: 'descent-override', value: '18.10%' },
-  { prop: 'line-gap-override', value: '14.11%' },
+    { prop: 'descent-override', value: '18.10%' },
+    { prop: 'line-gap-override', value: '14.11%' },
   ],
 });
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
-export const metadata = {
-  metadataBase: new URL('https://i-techs-website.vercel.app/'),
-  title: {
-    template: `%s | iTechs Arabia`,
-    default: 'iTechs Arabia | Tech solutions agency'},
-  description: "iTechs company website",
-  icons: { icon: '/assets/logo/favicon.jpg' },
-  openGraph: {
-    siteName: 'iTechs Arabia',
-    type: 'website',
-  },
-};
+
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+
+  const defaultTitle = locale === 'ar'
+    ? 'آيتكس أرابيا | شركة حلول تقنية'
+    : 'iTechs Arabia | Tech Solutions Agency';
+
+  const defaultDescription = locale === 'ar'
+    ? 'الموقع الرسمي لشركة آيتكس أرابيا'
+    : 'iTechs company website';
+
+  return {
+    metadataBase: new URL('https://i-techs-website.vercel.app/'),
+    title: {
+      default: defaultTitle,
+    },
+    description: defaultDescription,
+    icons: { icon: '/assets/logo/favicon.jpg' },
+    alternates: buildAlternates('', locale),
+    openGraph: buildOpenGraph({
+      title: defaultTitle,
+      description: defaultDescription,
+      path: '',
+      locale,
+    }),
+  };
+}
 
 export default async function RootLayout({ children, params }) {
   const { locale } = await params;
