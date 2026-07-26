@@ -2,6 +2,19 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import ServicesList from "./_components/ServicesList";
 import { HEADING_PAGE, BODY_TEXT } from "@/lib/typography";
+import { buildMetadata } from "@/lib/seo";
+
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "ServicesSeo" });
+
+  return buildMetadata({
+    title: t("title"),
+    description: t("description"),
+    path: "/services",
+    locale,
+  });
+}
 
 export default async function ServicesPage({ params }) {
   const { locale } = await params;

@@ -25,6 +25,14 @@
     "heading": "Empowering Partners with Data-Driven Excellence",
     "subtitle": "iTechs Arabia stands at the forefront of the industry, offering a comprehensive suite of cutting-edge technological services. Our primary focus is to seamlessly integrate robust solutions into the operations of organizations, ensuring they function optimally in today's dynamic landscape. Our core values of persistence, commitment, and transparency guide every project, enhancing real-time understanding and decision-making. Leveraging the latest technologies and tools, our dedicated team collaborates closely with clients to address global challenges effectively."
   },
+  "HomeSeo": {
+    "title": "Data-Driven Technology Solutions",
+    "description": "iTechs Arabia delivers geospatial, defense command & control, and VR/AR solutions that empower organizations to make smarter, data-driven decisions."
+  },
+  "AboutSeo": {
+    "title": "About Us",
+    "description": "Learn about the team, vision, and mission behind iTechs Arabia."
+  },
   "aboutUs": {
     "title": "About Us",
     "p1": "iTechs Arabia stands at the forefront of the industry, offering a comprehensive suite of cutting-edge technological services. Our primary focus is to seamlessly integrate robust solutions into the operations of organizations, ensuring they function optimally in today's dynamic landscape.",
@@ -44,9 +52,17 @@
     "subtitle": "Explore our full range of cutting-edge technological solutions.",
     "moreInfoAriaLabel": "More information about {title}"
   },
+  "ServicesSeo": {
+    "title": "Our Solutions",
+    "description": "Explore iTechs Arabia's full range of cutting-edge technological solutions, from geospatial systems to defense command & control and VR/AR."
+  },
   "productsPage": {
     "title": "Our Products",
     "subtitle": "Placeholder subtitle for the products page."
+  },
+  "ProductsSeo": {
+    "title": "Our Products",
+    "description": "Discover the products offered by iTechs Arabia."
   },
   "visionMission": {
     "visionTitle": "Vision",
@@ -81,6 +97,10 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       }
     }
+  },
+  "ContactSeo": {
+    "title": "Contact Us",
+    "description": "Get in touch with iTechs Arabia and we'll get back to you as soon as possible."
   },
   "contactPage": {
     "title": "Contact Us",

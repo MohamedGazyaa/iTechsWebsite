@@ -15,7 +15,7 @@ const alexandria = Alexandria({
 
 const gillSans = localFont({
   src: [
-    { path: '../../../public/fonts/GillSans.woff2', weight: '400', style: 'normal' },
+    { path: '../../../public/fonts/GillSans.woff2',  weight: '400', style: 'normal' },
     { path: '../../../public/fonts/GillSansBold.woff2', weight: '700', style: 'normal' },
   ],
   variable: '--font-en',
@@ -31,11 +31,17 @@ const gillSans = localFont({
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
-
 export const metadata = {
-  title: "iTechs Arabia",
+  metadataBase: new URL('https://i-techs-website.vercel.app/'),
+  title: {
+    template: `%s | iTechs Arabia`,
+    default: 'iTechs Arabia | Tech solutions agency'},
   description: "iTechs company website",
   icons: { icon: '/assets/logo/favicon.jpg' },
+  openGraph: {
+    siteName: 'iTechs Arabia',
+    type: 'website',
+  },
 };
 
 export default async function RootLayout({ children, params }) {

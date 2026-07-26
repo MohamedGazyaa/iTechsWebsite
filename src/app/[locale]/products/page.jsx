@@ -2,6 +2,19 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import ProductsList from "./_components/productsList";
 import { HEADING_PAGE, BODY_TEXT } from "@/lib/typography";
+import { buildMetadata } from "@/lib/seo";
+
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "ProductsSeo" });
+
+  return buildMetadata({
+    title: t("title"),
+    description: t("description"),
+    path: "/products",
+    locale,
+  });
+}
 
 export default async function ProductsPage({ params }) {
   const { locale } = await params;
