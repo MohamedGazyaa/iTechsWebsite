@@ -14,8 +14,8 @@ export default async function AboutUsSection() {
             {t("title")}
           </h2>
           <div className="mt-12">
-            {["p1", "p2", "p3", "p4"].map((key) => (
-              <p key={key} className={`mt-6 ${BODY_TEXT} leading-none text-itechsBlue`}>
+            {["p1", "p2", "p3"].map((key) => (
+              <p key={key} className={`mt-6 ${BODY_TEXT} leading-relaxed text-itechsBlue`}>
                 {t(key)}
               </p>
             ))}

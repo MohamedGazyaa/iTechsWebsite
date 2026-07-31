@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 html {
-  scrollbar-gutter: stable both-edges;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -19,4 +18,12 @@ html[lang="ar"] {
   --color-itechsBlue: #143980;
   --color-itechsSkyBlue: #EAF6F7;
   --color-itechsTeal: #2B8F92;
+  --animate-partners-marquee: partners-marquee 45s linear infinite;
+}
+
+/* Track holds two identical groups; shifting by -50% lands on a pixel-identical
+   frame, so the loop is seamless. */
+@keyframes partners-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }

@@ -49,46 +49,30 @@ export default async function SolutionsHero() {
             </p>
           </div>
 
-          {/*
-            Solutions column — absolute-positioned frames and line segments.
-            3 frames at vertical centers: 15%, 50%, 85%.
-            Outer lines are short; inner lines are long.
-            Frame h-12 = 3rem, half = 1.5rem. Gap at each line end = 8px.
-            L1: top 0,               height calc(15% - 1.5rem - 8px)
-            L2: top calc(15%+1.5rem+8px), height calc(35% - 3rem - 16px)
-            L3: top calc(50%+1.5rem+8px), height calc(35% - 3rem - 16px)
-            L4: top calc(85%+1.5rem+8px), height calc(15% - 1.5rem - 8px)
-          */}
-          <div className="relative h-full w-72 lg:w-96 me-2">
-
-            {solutions.map((key, i) => {
-              const pct = 15 + i * 35;
-              const top = `calc(${pct}% - 1.5rem)`;
-              const maxHeight = i < solutions.length - 1 ? '35%' : 'calc(15% + 1.5rem)';
-              return (
-                <div key={key}>
-                  {/* Frame */}
-                  <div className="absolute inset-s-0 w-12 h-12 z-10" style={{ top }}>
-                    <Image
-                      src="/assets/elements/frame.png"
-                      fill
-                      className="object-contain"
-                      alt=""
-                      aria-hidden="true"
-                    />
-                  </div>
-                  {/* Text — clipped to available space before next frame */}
-                  <div className="absolute inset-s-16 inset-e-4 overflow-hidden" style={{ top, maxHeight }}>
-                    <h3 className="text-white font-bold text-base lg:text-lg leading-snug">
-                      {t(`${key}Title`)}
-                    </h3>
-                    <p className="text-white/70 text-xs lg:text-sm mt-1 leading-tight">
-                      {t(`${key}Desc`)}
-                    </p>
-                  </div>
+          {/* Solutions column — stacked top-to-bottom in normal flow, even gaps */}
+          <div className="w-72 lg:w-96 me-2 flex flex-col justify-start gap-8 py-12">
+            {solutions.map((key) => (
+              <div key={key} className="flex gap-4 items-start">
+                {/* Frame */}
+                <div className="relative w-12 h-12 shrink-0">
+                  <Image
+                    src="/assets/elements/frame.png"
+                    fill
+                    className="object-contain"
+                    alt=""
+                    aria-hidden="true"
+                  />
                 </div>
-              );
-            })}
+                <div>
+                  <h3 className="text-white font-bold text-base lg:text-lg leading-snug">
+                    {t(`${key}Title`)}
+                  </h3>
+                  <p className="text-white/70 text-xs lg:text-sm mt-1 leading-tight">
+                    {t(`${key}Desc`)}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
 
           {/* Chevron */}

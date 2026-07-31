@@ -3,6 +3,7 @@ import { buildMetadata } from "@/lib/seo";
 import AboutUsSection from "./_components/aboutUs";
 import VisionMission from "./_components/VisionMission";
 import TeamSection from "./_components/team";
+import PartnersSection from "@/components/PartnersSection";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -16,12 +17,15 @@ export async function generateMetadata({ params }) {
   });
 }
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const t = await getTranslations("partnersSection");
+
   return (
     <main>
       <AboutUsSection />
       <VisionMission />
       <TeamSection />
+      <PartnersSection variant="grid" heading={t("heading")} />
     </main>
   );
 }

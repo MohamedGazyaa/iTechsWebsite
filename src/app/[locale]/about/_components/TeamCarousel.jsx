@@ -6,7 +6,6 @@ import { useTranslations, useLocale } from 'next-intl';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { teamMembers } from '@/data/team';
-import { BODY_TEXT } from '@/lib/typography';
 
 export default function TeamCarousel() {
   const t = useTranslations('team');
@@ -51,16 +50,18 @@ export default function TeamCarousel() {
 
         {/* Left chevron — shifts list left: right neighbor → center (goNext) */}
         <button
-          onClick={goNext}
+          onClick={goPrev}
           aria-label={t('nextMember')}
           className="shrink-0 h-20 md:h-28 flex items-center p-1 md:p-2 text-itechsBlue hover:text-itechsTeal transition-colors"
         >
           <FontAwesomeIcon icon={startIcon} className="text-lg md:text-xl" />
         </button>
 
-        {/* Prev neighbor — desktop only */}
+        {/* Prev neighbor — desktop only. Label is absolutely positioned so its
+            width never widens the column — keeps neighbor columns equal and the
+            active frame centered for every member. */}
         {prev && (
-          <div className="hidden md:flex flex-col items-center gap-4 shrink-0 z-10">
+          <div className="relative hidden md:flex flex-col items-center shrink-0 z-10">
             {/* bg-itechsSkyBlue masks the absolute line behind this frame */}
             <div className="relative w-28 h-28 bg-itechsSkyBlue">
               <Image
@@ -71,8 +72,10 @@ export default function TeamCarousel() {
                 aria-hidden="true"
               />
             </div>
-            <p className="text-xs font-bold text-itechsBlue uppercase tracking-[0.15em] text-center whitespace-nowrap">
-              {t(`members.${prev.id}.name`)}
+            {/* left-1/2 + -translate-x-1/2 centers on the frame in both LTR and
+                RTL — auto-margins can't (they pin to one edge when wider than the column). */}
+            <p className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-40 text-xs font-bold text-itechsBlue uppercase tracking-[0.15em] text-center text-balance">
+              {t(`members.${prev.id}.title`)}
             </p>
           </div>
         )}
@@ -94,20 +97,16 @@ export default function TeamCarousel() {
               aria-hidden="true"
             />
           </div>
-          <p className="text-base font-bold text-itechsBlue uppercase tracking-[0.15em] text-center">
-            {t(`members.${active.id}.name`)}
-          </p>
-          <p className="text-sm font-semibold text-itechsTeal text-center mt-2">
+          <p className="max-w-52 text-base font-bold text-itechsBlue uppercase tracking-[0.15em] text-center text-balance">
             {t(`members.${active.id}.title`)}
-          </p>
-          <p className={`${BODY_TEXT} text-itechsBlue/70 text-center leading-relaxed max-w-40 md:max-w-60`}>
-            {t(`members.${active.id}.description`)}
           </p>
         </div>
 
-        {/* Next neighbor — desktop only */}
+        {/* Next neighbor — desktop only. Label is absolutely positioned so its
+            width never widens the column — keeps neighbor columns equal and the
+            active frame centered for every member. */}
         {next && (
-          <div className="hidden md:flex flex-col items-center gap-4 shrink-0 z-10">
+          <div className="relative hidden md:flex flex-col items-center shrink-0 z-10">
             {/* bg-itechsSkyBlue masks the absolute line behind this frame */}
             <div className="relative w-28 h-28 bg-itechsSkyBlue">
               <Image
@@ -118,15 +117,17 @@ export default function TeamCarousel() {
                 aria-hidden="true"
               />
             </div>
-            <p className="text-xs font-bold text-itechsBlue uppercase tracking-[0.15em] text-center whitespace-nowrap">
-              {t(`members.${next.id}.name`)}
+            {/* left-1/2 + -translate-x-1/2 centers on the frame in both LTR and
+                RTL — auto-margins can't (they pin to one edge when wider than the column). */}
+            <p className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-40 text-xs font-bold text-itechsBlue uppercase tracking-[0.15em] text-center text-balance">
+              {t(`members.${next.id}.title`)}
             </p>
           </div>
         )}
 
         {/* Right chevron — shifts list right: left neighbor → center (goPrev) */}
         <button
-          onClick={goPrev}
+          onClick={goNext}
           aria-label={t('prevMember')}
           className="shrink-0 h-20 md:h-28 flex items-center p-1 md:p-2 text-itechsBlue hover:text-itechsTeal transition-colors"
         >

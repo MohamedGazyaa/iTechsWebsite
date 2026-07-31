@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import TeamCarousel from "./TeamCarousel";
-import { HEADING_PAGE } from "@/lib/typography";
+import { HEADING_SECTION } from "@/lib/typography";
 
 export default async function TeamSection() {
   const t = await getTranslations("team");
@@ -9,7 +9,7 @@ export default async function TeamSection() {
   return (
     <section
       aria-label={t("title")}
-      className="w-full min-h-screen bg-itechsSkyBlue overflow-hidden flex flex-col lg:flex-row"
+      className="w-full bg-itechsSkyBlue overflow-hidden flex flex-col lg:flex-row"
     >
 
       {/* Top bar — mobile only */}
@@ -38,7 +38,7 @@ export default async function TeamSection() {
 
       {/* Content */}
       <div className="flex-1 min-w-0 py-16 px-8 lg:px-16">
-        <h2 className={`${HEADING_PAGE} text-itechsBlue mb-12`}>
+        <h2 className={`${HEADING_SECTION} text-itechsBlue mb-12`}>
           {t("title")}
         </h2>
         <TeamCarousel />
