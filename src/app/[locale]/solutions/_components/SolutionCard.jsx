@@ -6,8 +6,8 @@ import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import CardTooltip from "./CardTooltip";
 
-export default function ServiceCard({ title, description, icon, href }) {
-  const t = useTranslations("servicesPage");
+export default function SolutionCard({ title, description, icon, href }) {
+  const t = useTranslations("solutionsPage");
   const [isOpen, setIsOpen] = useState(false);
   const [canHover, setCanHover] = useState(false);
   const [placement, setPlacement] = useState("center");

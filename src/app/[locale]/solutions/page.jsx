@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import ServicesList from "./_components/ServicesList";
+import SolutionsList from "./_components/SolutionsList";
 import { HEADING_PAGE, BODY_TEXT } from "@/lib/typography";
 import { buildMetadata } from "@/lib/seo";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "ServicesSeo" });
+  const t = await getTranslations({ locale, namespace: "SolutionsSeo" });
 
   return buildMetadata({
     title: t("title"),
@@ -16,9 +16,9 @@ export async function generateMetadata({ params }) {
   });
 }
 
-export default async function ServicesPage({ params }) {
+export default async function SolutionsPage({ params }) {
   const { locale } = await params;
-  const t = await getTranslations("servicesPage");
+  const t = await getTranslations("solutionsPage");
 
   return (
     <main>
@@ -59,7 +59,7 @@ export default async function ServicesPage({ params }) {
           <p className={`${BODY_TEXT} text-itechsBlue mb-12`}>
             {t("subtitle")}
           </p>
-          <ServicesList locale={locale} />
+          <SolutionsList locale={locale} />
         </div>
 
         {/* Right column — desktop only */}

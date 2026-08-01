@@ -43,8 +43,8 @@
     "learnMore": "Learn more"
   },
   "partnersSection": {
-    "heading": "Our Partners",
-    "stripHeading": "Trusted by teams at"
+    "heading": "Group Portfolio",
+    "stripHeading": "Group Portfolio"
   },
   "AboutSeo": {
     "title": "About Us",
@@ -107,22 +107,22 @@
     "backendLayer": "Backend Layer",
     "dataWarehouse": "Data Warehouse"
   },
-  "servicesPage": {
+    "SolutionsSeo": {
+    "title": "Our Solutions",
+    "description": "Explore iTechs Arabia's full range of cutting-edge technological solutions, from geospatial systems to defense command & control and VR/AR."
+  },
+  "solutionsPage": {
     "title": "Our Solutions",
     "subtitle": "Explore our full range of cutting-edge technological solutions.",
     "moreInfoAriaLabel": "More information about {title}"
   },
-  "ServicesSeo": {
-    "title": "Our Solutions",
-    "description": "Explore iTechs Arabia's full range of cutting-edge technological solutions, from geospatial systems to defense command & control and VR/AR."
+    "ProductsSeo": {
+    "title": "Our Products",
+    "description": "Discover the products offered by iTechs Arabia."
   },
   "productsPage": {
     "title": "Our Products",
     "subtitle": "Placeholder subtitle for the products page."
-  },
-  "ProductsSeo": {
-    "title": "Our Products",
-    "description": "Discover the products offered by iTechs Arabia."
   },
   "ContactSeo": {
     "title": "Contact Us",

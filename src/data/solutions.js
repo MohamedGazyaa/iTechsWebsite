@@ -20,7 +20,7 @@
 //   2. Add an entry below with both English and Arabic strings
 //   3. Create the page at src/app/[locale]/services/<path>/page.jsx
 
-export const services = [
+export const solutions = [
   {
     path: "geospatial-solutions",
     icon: "/assets/services/geospatialSolutions.png",
