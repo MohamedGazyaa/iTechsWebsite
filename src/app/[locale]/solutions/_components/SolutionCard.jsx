@@ -4,7 +4,7 @@ import { useState, useEffect, useLayoutEffect, useRef } from "react";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
-import CardTooltip from "./CardTooltip";
+import CardTooltip from "../../../../components/CardTooltip";
 
 export default function SolutionCard({ title, description, icon, href }) {
   const t = useTranslations("solutionsPage");

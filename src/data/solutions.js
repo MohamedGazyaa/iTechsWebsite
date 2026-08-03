@@ -95,7 +95,7 @@ export const solutions = [
   },
   {
     path: "digital-twin",
-    icon: "/assets/services/digitalTwin.png",
+    icon: "/assets/solutions/digitalTwin.png",
     title: {
       en: "DIGITAL TWIN",
       ar: "اسم مؤقت",

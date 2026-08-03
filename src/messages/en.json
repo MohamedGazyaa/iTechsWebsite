@@ -122,7 +122,8 @@
   },
   "productsPage": {
     "title": "Our Products",
-    "subtitle": "Placeholder subtitle for the products page."
+    "subtitle": "Placeholder subtitle for the products page.",
+    "moreInfoAriaLabel": "More information about {title}"
   },
   "ContactSeo": {
     "title": "Contact Us",

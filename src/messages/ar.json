@@ -118,7 +118,8 @@
   },
     "ProductsSeo": {
     "title": "منتجاتنا",
-    "description": "اكتشف المنتجات التي تقدّمها آيتكس أرابيا."
+    "description": "اكتشف المنتجات التي تقدّمها آيتكس أرابيا.",
+    "moreInfoAriaLabel": "مزيد من المعلومات حول {title}"
   },
   "productsPage": {
     "title": "منتجاتنا",

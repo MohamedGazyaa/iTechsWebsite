@@ -133,7 +133,7 @@ export default function PartnersSection({
         {partners.map((partner, i) => (
           <li
             key={partner.name}
-            className={`flex shrink-0 items-center justify-center py-2 basis-[calc(33.333%_-_1rem)] md:flex-1 md:basis-auto ${
+            className={`flex shrink-0 items-center justify-center py-2 basis-[calc(33.333%-1rem)] md:flex-1 md:basis-auto ${
               i > 0 ? "md:border-s md:border-itechsBlue/15" : ""
             }`}
           >

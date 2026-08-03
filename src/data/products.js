@@ -23,7 +23,7 @@
 export const products = [
   {
     path: "artificial-intelligence",
-    icon: "/assets/products/artificialIntelligence.png",
+    icon: "/assets/products/artificialIntelligenceIcon.png",
     title: {
       en: "ARTIFICIAL INTELLIGENCE",
       ar: "اسم مؤقت",
@@ -35,7 +35,7 @@ export const products = [
   },
   {
     path: "planning-training-and-simulation",
-    icon: "/assets/products/planningTrainingSimulation.png",
+    icon: "/assets/products/planningTrainingSimulationIcon.png",
     title: {
       en: "PLANNING, TRAINING & SIMULATION",
       ar: "اسم مؤقت",
@@ -47,7 +47,7 @@ export const products = [
   },
   {
     path: "workforce-management",
-    icon: "/assets/products/workforceManagement.png",
+    icon: "/assets/products/workforceManagementIcon.png",
     title: {
       en: "WORKFORCE MANAGEMENT",
       ar: "اسم مؤقت",
@@ -59,7 +59,19 @@ export const products = [
   },
   {
     path: "artillery-tactical-operation-navigation",
-    icon: "/assets/products/artilleryTacticalOperationNavigation.png",
+    icon: "/assets/products/artilleryTacticalOperationNavigationIcon.png",
+    title: {
+      en: "ARTILLERY TACTICAL OPERATION NAVIGATION",
+      ar: "اسم مؤقت",
+    },
+    description: {
+      en: "Placeholder description for the workforce management product.",
+      ar: "نص توضيحي مؤقت لمنتج إدارة القوى العاملة.",
+    },
+  },
+  {
+    path: "artillery-tactical-operation-navigations",
+    icon: "/assets/products/artilleryTacticalOperationNavigationIcon.png",
     title: {
       en: "ARTILLERY TACTICAL OPERATION NAVIGATION",
       ar: "اسم مؤقت",

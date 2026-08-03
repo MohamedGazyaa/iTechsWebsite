@@ -10,7 +10,7 @@ function Item({ label }) {
     <div className="relative flex w-screen md:w-[50vw] shrink-0 items-center justify-center gap-3 rtl:flex-row-reverse">
       <span
         aria-hidden="true"
-        className="absolute inset-y-0 start-0 hidden items-center md:flex ltr:-translate-x-1/2 rtl:translate-x-1/2"
+        className="absolute inset-y-0 inset-s-0 hidden items-center md:flex ltr:-translate-x-1/2 rtl:translate-x-1/2"
       >
         <span className="block size-2.5 rounded-full bg-itechsBlue" />
       </span>
