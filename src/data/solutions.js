@@ -23,74 +23,62 @@
 export const solutions = [
   {
     path: "geospatial-solutions",
-    icon: "/assets/services/geospatialSolutions.png",
+    icon: "/assets/solutions/geospatialSolutions.png",
     title: {
       en: "GEOSAPATIAL SOLUTIONS",
-      ar: "اسم مؤقت",
+      ar: "الحلول الجيومكانية",
     },
     description: {
-      en: "Placeholder description for the web development service.",
-      ar: "نص توضيحي مؤقت لخدمة تطوير الويب.",
+      en: "Transform location data into meaningful intelligence using Esri technology, revealing patterns, opportunities and smarter ways forward.",
+      ar: "نحوّل البيانات المكانية إلى معلومات قيّمة باستخدام تقنيات Esri، بما يكشف الأنماط والفرص ويدعم الوصول إلى حلول ومسارات أكثر ذكاءً.",
     },
   },
   {
     path: "forensics-and-cybersecurity-solutions",
-    icon: "/assets/services/forensicsCyberSecuirty.png",
+    icon: "/assets/solutions/forensicsCyberSecuirty.png",
     title: {
       en: "SECURITY SOLUTIONS",
-      ar: "اسم مؤقت",
+      ar: "الحلول الأمنية",
     },
     description: {
-      en: "Placeholder description for the mobile apps service.",
-      ar: "نص توضيحي مؤقت لخدمة تطبيقات الجوال.",
+      en: "Security solutions are designed to protect critical infrastructure, facilities and urban environments through advanced surveillance, access control and integrated monitoring systems.",
+      ar: "صُممت حلولنا الأمنية لحماية البنية التحتية الحيوية والمنشآت والبيئات الحضرية من خلال أنظمة المراقبة المتقدمة، والتحكم في الوصول، ومنصات المراقبة المتكاملة.",
     },
   },
   {
     path: "defense-command-and-control-applications",
-    icon: "/assets/services/defenseCommand.png",
+    icon: "/assets/solutions/defenseCommand.png",
     title: {
       en: "DEFENSE COMMAND AND CONTROL APPLICATIONS",
-      ar: "اسم مؤقت",
+      ar: "تطبيقات القيادة والسيطرة الدفاعية ",
     },
     description: {
-      en: "Placeholder description for the data analytics service.",
-      ar: "نص توضيحي مؤقت لخدمة تحليل البيانات.",
-    },
-  },
-  {
-    path: "system-integration-services",
-    icon: "/assets/services/systemIntegration.png",
-    title: {
-      en: "SYSTEM INTEGRATION SERVICES",
-      ar: "اسم مؤقت",
-    },
-    description: {
-      en: "Placeholder description for the cloud solutions service.",
-      ar: "نص توضيحي مؤقت لخدمة الحلول السحابية.",
+      en: "A unified operational picture for faster decisions, coordinated action and greater mission control.",
+      ar: "صورة تشغيلية موحدة تدعم اتخاذ قرارات أسرع، وتنسيق الإجراءات، وتعزيز السيطرة على المهام والعمليات.",
     },
   },
   {
     path: "data-management-and-analytics-services",
-    icon: "/assets/services/dataManagement.png",
+    icon: "/assets/solutions/dataManagement.png",
     title: {
       en: "DATA MANAGEMENT AND ANALYTICS SERVICES",
-      ar: "اسم مؤقت",
+      ar: "خدمات إدارة البيانات والتحليلات",
     },
     description: {
-      en: "Placeholder description for the cybersecurity service.",
-      ar: "نص توضيحي مؤقت لخدمة الأمن السيبراني.",
+      en: "Turn fragmented information into trusted intelligence that supports confident and measurable decisions.",
+      ar: "نحوّل المعلومات المتفرقة إلى بيانات موثوقة تدعم اتخاذ قرارات واثقة قابلة للتنفيذ.",
     },
   },
   {
     path: "integration-services-and-iot",
-    icon: "/assets/services/integrationServices.png",
+    icon: "/assets/solutions/integrationServices.png",
     title: {
-      en: "INTEGRATION SERVICES AND IOT",
-      ar: "اسم مؤقت",
+      en: "INTEGRATION SERVICES AND IoT",
+      ar: "خدمات الربط وإنترنت الأشياء",
     },
     description: {
-      en: "Placeholder description for the consulting service.",
-      ar: "نص توضيحي مؤقت لخدمة الاستشارات.",
+      en: "Bringing technologies, infrastructure and people together within one seamless operational ecosystem.",
+      ar: "نربط أجهزة إنترنت الأشياء والبنية التحتية الرقمية والأنظمة المختلفة عبر تكامل تقني موحد يتيح تدفق البيانات وتشغيل العمليات بذكاء.",
     },
   },
   {
@@ -98,11 +86,11 @@ export const solutions = [
     icon: "/assets/solutions/digitalTwin.png",
     title: {
       en: "DIGITAL TWIN",
-      ar: "اسم مؤقت",
+      ar: "التوأم الرقمي",
     },
     description: {
-      en: "Placeholder description for the consulting service.",
-      ar: "نص توضيحي مؤقت لخدمة الاستشارات.",
+      en: "A digital twin is a real-time virtual replica of a physical asset, system, or environment that enables continuous monitoring, analysis, and optimisation.",
+      ar: "التوأم الرقمي هو نسخة افتراضية حية ومتصلة لحظياً من أصل مادي أو نظام أو بيئة، تتيح المراقبة الدقيقة والتحليل المتقدم والتنبؤ بالمستقبل وتحسين الأداء بشكل مستمر، مما يمكّن المؤسسات من اتخاذ قرارات أسرع وأكثر ذكاءً وفعالية.",
     },
   },
 ];
