@@ -26,11 +26,11 @@ export const products = [
     icon: "/assets/products/artificialIntelligenceIcon.png",
     title: {
       en: "ARTIFICIAL INTELLIGENCE",
-      ar: "اسم مؤقت",
+      ar: "الذكاء الاصطناعي",
     },
     description: {
-      en: "Placeholder description for the artificial intelligence product.",
-      ar: "نص توضيحي مؤقت لمنتج الذكاء الاصطناعي.",
+      en: "Turn complex data into intelligent action through AI solutions designed around your organisation’s operations and objectives.",
+      ar: "نحوّل البيانات المعقدة إلى إجراءات ذكية من خلال حلول ذكاء اصطناعي مصممة بما يتوافق مع عمليات المؤسسات وأهدافها.",
     },
   },
   {
@@ -38,11 +38,11 @@ export const products = [
     icon: "/assets/products/planningTrainingSimulationIcon.png",
     title: {
       en: "PLANNING, TRAINING & SIMULATION",
-      ar: "اسم مؤقت",
+      ar: "التخطيط والتدريب والمحاكاة",
     },
     description: {
-      en: "Placeholder description for the planning, training and simulation product.",
-      ar: "نص توضيحي مؤقت لمنتج التخطيط والتدريب والمحاكاة.",
+      en: "Plan smarter, train realistically and validate critical decisions before they are implemented in the field.",
+      ar: "خطط بذكاء، وتدرّب بواقعية، واختبر القرارات الحيوية قبل تنفيذها في الميدان.",
     },
   },
   {
@@ -50,11 +50,11 @@ export const products = [
     icon: "/assets/products/workforceManagementIcon.png",
     title: {
       en: "WORKFORCE MANAGEMENT",
-      ar: "اسم مؤقت",
+      ar: "إدارة القوى العاملة",
     },
     description: {
-      en: "Placeholder description for the workforce management product.",
-      ar: "نص توضيحي مؤقت لمنتج إدارة القوى العاملة.",
+      en: "Turn every request, task and field team into one connected, visible and measurable service operation.",
+      ar: "نحوّل كل طلب ومهمة وفريق ميداني إلى عملية خدمية مترابطة وواضحة وقابلة للقياس.",
     },
   },
   {
@@ -62,11 +62,11 @@ export const products = [
     icon: "/assets/products/artilleryTacticalOperationNavigationIcon.png",
     title: {
       en: "ARTILLERY TACTICAL OPERATION NAVIGATION",
-      ar: "اسم مؤقت",
+      ar: "العمليات التكتيكية والملاحة للمدفعية",
     },
     description: {
-      en: "Placeholder description for the workforce management product.",
-      ar: "نص توضيحي مؤقت لمنتج إدارة القوى العاملة.",
+      en: "A connected artillery planning, navigation and fire-control environment designed to strengthen coordination, visibility and operational precision.",
+      ar: "بيئة مترابطة لتخطيط المدفعية والملاحة والتحكم في النيران، مصممة للتنسيق والوضوح والدقة التشغيلية.",
     },
   },
 ];
