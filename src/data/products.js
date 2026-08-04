@@ -69,16 +69,4 @@ export const products = [
       ar: "نص توضيحي مؤقت لمنتج إدارة القوى العاملة.",
     },
   },
-  {
-    path: "artillery-tactical-operation-navigations",
-    icon: "/assets/products/artilleryTacticalOperationNavigationIcon.png",
-    title: {
-      en: "ARTILLERY TACTICAL OPERATION NAVIGATION",
-      ar: "اسم مؤقت",
-    },
-    description: {
-      en: "Placeholder description for the workforce management product.",
-      ar: "نص توضيحي مؤقت لمنتج إدارة القوى العاملة.",
-    },
-  },
 ];
