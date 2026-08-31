@@ -98,9 +98,9 @@ export default async function ProductDetailPage({ params }) {
       </header>
 
       {/* Mobile (below sm): description + stacked images side by side in one row */}
-      <section className="px-8 pb-12 sm:hidden">
+      <section className="px-8 pb-12 md:hidden">
         {hasImages && (
-          <div className="float-end ms-4 mb-3 w-72">
+          <div className="float-end ms-4 mb-3 w-28">
             {product.images.map((src, i) => (
               <div key={i} className="relative w-full aspect-square mb-3">
                 <Image
@@ -118,7 +118,7 @@ export default async function ProductDetailPage({ params }) {
       </section>
 
       {/* sm and up: description full-width */}
-      <section className="hidden sm:block px-8 md:px-12 lg:px-16 pb-12">
+      <section className="hidden md:block px-8 md:px-12 lg:px-16 pb-12">
         {descriptionParagraphs}
       </section>
 
