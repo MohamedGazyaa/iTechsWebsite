@@ -1,30 +1,30 @@
-const LOCALES = ['en', 'ar'];
+const LOCALES = ["en", "ar"];
 
 const BRAND_NAME = {
-  en: 'iTechs Arabia',
-  ar: 'آيتكس أرابيا',
+  en: "iTechs Arabia",
+  ar: "آيتكس أرابيا",
 };
 
 const OG_IMAGE = {
-  en: '/assets/logo/englishOgImage.jpg',
-  ar: '/assets/logo/arabicOgImage.jpg',
+  en: "/assets/logo/englishOgImage.jpg",
+  ar: "/assets/logo/arabicOgImage.jpg",
 };
 
 export function buildAlternates(path, currentLocale) {
   return {
     canonical: `/${currentLocale}${path}`,
     languages: Object.fromEntries(
-      LOCALES.map((locale) => [locale, `/${locale}${path}`])
+      LOCALES.map((locale) => [locale, `/${locale}${path}`]),
     ),
   };
 }
 
 export function buildOpenGraph({ title, description, path, locale }) {
   const brand = BRAND_NAME[locale] ?? BRAND_NAME.en;
-  const ogLocale = locale === 'ar' ? 'ar_EG' : 'en_US';
+  const ogLocale = locale === "ar" ? "ar_EG" : "en_US";
 
   return {
-    type: 'website',
+    type: "website",
     siteName: brand,
     title,
     description,
@@ -34,9 +34,15 @@ export function buildOpenGraph({ title, description, path, locale }) {
   };
 }
 
-export function buildMetadata({ title, description, path, locale }) {
+export function buildMetadata({
+  title,
+  description,
+  path,
+  locale,
+  includeBrand = true,
+}) {
   const brand = BRAND_NAME[locale] ?? BRAND_NAME.en;
-  const fullTitle = `${title} | ${brand}`;
+  const fullTitle = includeBrand ? `${title} | ${brand}` : title;
 
   return {
     title: fullTitle,

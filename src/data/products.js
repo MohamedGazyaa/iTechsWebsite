@@ -1,84 +1,26 @@
-// src/data/products.js
-//
-// Product entries for iTechs. Each one renders as a card on the products page
-// and links to its own page at /products/[path].
-//
-// Usage in a server component:
-//   import { products } from "@/data/products";
-//   const { locale } = await params;
-//   products.map((product) => (
-//     <ProductCard
-//       title={product.title[locale]}
-//       description={product.description[locale]}
-//       icon={product.icon}
-//       href={`/products/${product.path}`}
-//     />
-//   ));
-//
-// To add a new product:
-//   1. Drop the icon image into /public/assets/products/<name>.png
-//   2. Add an entry below with both English and Arabic strings
-//   3. Create the page at src/app/[locale]/products/<path>/page.jsx
-
 export const products = [
   {
     path: "artificial-intelligence",
+    key: "artificialIntelligence",
     icon: "/assets/products/artificialIntelligenceIcon.png",
-    title: {
-      en: "ARTIFICIAL INTELLIGENCE",
-      ar: "اسم مؤقت",
-    },
-    description: {
-      en: "Placeholder description for the artificial intelligence product.",
-      ar: "نص توضيحي مؤقت لمنتج الذكاء الاصطناعي.",
-    },
+    images: ["/assets/products/AI/AI1.jpg", "/assets/products/AI/AI2.jpg"],
   },
   {
     path: "planning-training-and-simulation",
+    key: "planningTrainingSimulation",
     icon: "/assets/products/planningTrainingSimulationIcon.png",
-    title: {
-      en: "PLANNING, TRAINING & SIMULATION",
-      ar: "اسم مؤقت",
-    },
-    description: {
-      en: "Placeholder description for the planning, training and simulation product.",
-      ar: "نص توضيحي مؤقت لمنتج التخطيط والتدريب والمحاكاة.",
-    },
+    images: ["/assets/products/PTS/PTS1.jpg"],
   },
   {
     path: "workforce-management",
+    key: "workforceManagement",
     icon: "/assets/products/workforceManagementIcon.png",
-    title: {
-      en: "WORKFORCE MANAGEMENT",
-      ar: "اسم مؤقت",
-    },
-    description: {
-      en: "Placeholder description for the workforce management product.",
-      ar: "نص توضيحي مؤقت لمنتج إدارة القوى العاملة.",
-    },
+    images: ["/assets/products/WFM/WFM1.jpg"],
   },
   {
     path: "artillery-tactical-operation-navigation",
+    key: "artilleryTacticalOperationNavigation",
     icon: "/assets/products/artilleryTacticalOperationNavigationIcon.png",
-    title: {
-      en: "ARTILLERY TACTICAL OPERATION NAVIGATION",
-      ar: "اسم مؤقت",
-    },
-    description: {
-      en: "Placeholder description for the workforce management product.",
-      ar: "نص توضيحي مؤقت لمنتج إدارة القوى العاملة.",
-    },
-  },
-  {
-    path: "artillery-tactical-operation-navigations",
-    icon: "/assets/products/artilleryTacticalOperationNavigationIcon.png",
-    title: {
-      en: "ARTILLERY TACTICAL OPERATION NAVIGATION",
-      ar: "اسم مؤقت",
-    },
-    description: {
-      en: "Placeholder description for the workforce management product.",
-      ar: "نص توضيحي مؤقت لمنتج إدارة القوى العاملة.",
-    },
+    images: ["/assets/products/ATON/ATON1.jpg"],
   },
 ];
