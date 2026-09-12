@@ -19,7 +19,7 @@ export default function CollapsibleSection({
       >
         <h2 className={titleClassName}>{title}</h2>
         <svg
-          className={`h-5 w-5 shrink-0 text-itechsBlue transition-transform sm:hidden ${
+          className={`h-5 w-5 shrink-0 text-itechsTeal cursor-pointer transition-transform sm:hidden ${
             open ? "rotate-180" : ""
           }`}
           fill="none"
