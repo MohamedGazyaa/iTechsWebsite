@@ -2,8 +2,8 @@ import { products } from "@/data/products";
 import { useTranslations } from "next-intl";
 import ProductCard from "./productCard";
 
-export default function ProductsList({ locale }) {
-const t = useTranslations("products.items");
+export default function ProductsList() {
+  const t = useTranslations("products.items");
 
   return (
     <ul className="flex flex-wrap justify-center gap-4 md:gap-6">

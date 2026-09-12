@@ -73,7 +73,7 @@ export default async function ProductDetailPage({ params }) {
   const descriptionParagraphs = detailedDescription.map((paragraph, i) => (
     <p
       key={i}
-      className={`mt-6 first:mt-0 ${BODY_TEXT} leading-relaxed text-itechsBlue text-justify`}
+      className={`mt-6 first:mt-0 ${BODY_TEXT} leading-relaxed text-itechsSkyBlue text-justify`}
     >
       {paragraph}
     </p>
@@ -82,7 +82,7 @@ export default async function ProductDetailPage({ params }) {
   const hasImages = product.images?.length > 0;
 
   return (
-    <main className="w-full">
+    <main className="w-full bg-itechsBlue border-b-2 border-itechsTeal">
       <header className="py-12 md:py-16 px-8 md:px-12 lg:px-16">
         <div className="flex items-center gap-4">
           <Image
@@ -92,14 +92,14 @@ export default async function ProductDetailPage({ params }) {
             height={64}
             className="shrink-0"
           />
-          <h1 className={`${HEADING_SECTION} text-itechsBlue`}>{t("title")}</h1>
+          <h1 className={`${HEADING_SECTION} text-itechsTeal`}>{t("title")}</h1>
         </div>
-        <div className="mt-4 border-b-2 border-itechsBlue" />
+        <div className="mt-4 border-b-2 border-itechsTeal" />
       </header>
 
       {/* Mobile (below sm): description + stacked images side by side in one row */}
       <section className="px-8 pb-12 md:hidden">
-        {hasImages && (
+        {/* {hasImages && (
           <div className="float-end ms-4 mb-3 w-28">
             {product.images.map((src, i) => (
               <div key={i} className="relative w-full aspect-square mb-3">
@@ -112,7 +112,7 @@ export default async function ProductDetailPage({ params }) {
               </div>
             ))}
           </div>
-        )}
+        )} */}
         <div className="min-w-0 text-justify">{descriptionParagraphs}</div>
         <div className="clear-both"></div>
       </section>
@@ -123,7 +123,7 @@ export default async function ProductDetailPage({ params }) {
       </section>
 
       {/* sm and up: images centered below the description */}
-      {hasImages && (
+      {/* {hasImages && (
         <section className="hidden sm:block px-8 md:px-12 lg:px-16 pb-12">
           <ul className="flex flex-wrap justify-center gap-6">
             {product.images.map((src, i) => (
@@ -141,23 +141,23 @@ export default async function ProductDetailPage({ params }) {
             ))}
           </ul>
         </section>
-      )}
+      )} */}
 
       <section className="px-8 md:px-12 lg:px-16 pb-12">
         <CollapsibleSection
           title={tSections("whatWeDeliver")}
-          titleClassName={`${HEADING_SUB_SECTION} text-itechsBlue`}
+          titleClassName={`${HEADING_SUB_SECTION} text-itechsTeal`}
         >
           <ul className="mt-6 space-y-6">
             {whatWeDeliver.map((item, i) => (
               <li key={i} className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-itechsBlue" />
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-itechsTeal" />
                 <div>
-                  <h3 className={`${BODY_TEXT} font-semibold text-itechsBlue`}>
+                  <h3 className={`${BODY_TEXT} font-semibold text-itechsTeal`}>
                     {item.title}
                   </h3>
                   <p
-                    className={`mt-1 ${BODY_TEXT} leading-relaxed text-itechsBlue`}
+                    className={`mt-1 ${BODY_TEXT} leading-relaxed text-itechsSkyBlue`}
                   >
                     {item.description}
                   </p>
@@ -177,13 +177,15 @@ export default async function ProductDetailPage({ params }) {
             >
               <CollapsibleSection
                 title={section.title}
-                titleClassName={`${HEADING_SUB_SECTION} text-itechsBlue`}
+                titleClassName={`${HEADING_SUB_SECTION} text-itechsTeal`}
               >
                 <ul className="mt-6 space-y-2">
                   {section.items.map((item, i) => (
                     <li key={i} className="flex gap-3">
-                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-itechsBlue" />
-                      <p className={`${BODY_TEXT} text-itechsBlue`}>{item}</p>
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-itechsTeal" />
+                      <p className={`${BODY_TEXT} text-itechsSkyBlue`}>
+                        {item}
+                      </p>
                     </li>
                   ))}
                 </ul>

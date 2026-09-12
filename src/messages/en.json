@@ -16,18 +16,18 @@
     "addressLine2": "Al Mursalat District, Riyadh, Saudi Arabia.",
     "copyright": "COPYRIGHT © 2024 ITECHS ARABIA. ALL RIGHTS RESERVED."
   },
-    "HomeSeo": {
+  "HomeSeo": {
     "title": "Data-Driven Technology Solutions",
     "description": "iTechs Arabia provides integrated technology, geospatial, defence, and data analytics solutions that improve operational visibility, efficiency, and decision-making for organisations."
   },
-    "partnersBanner": {
+  "partnersBanner": {
     "heading": "Technology Partner"
   },
   "landingHero": {
     "heading": "Are You Ready to Transform Your Business?",
     "subtitle": "iTechs Arabia delivers integrated technology and data solutions that give organisations greater visibility, more optimization, and the confidence to make faster decisions."
   },
-    "mottoHero": {
+  "mottoHero": {
     "heading": "Empowering Partners with Data-Driven Excellence",
     "subtitle": "iTechs Arabia stands at the forefront of the industry, offering a comprehensive suite of cutting-edge technological services. Our primary focus is to seamlessly integrate robust solutions into the operations of organizations, ensuring they function optimally in today’s dynamic landscape. Our core values of persistence, commitment, and transparency guide every project, enhancing real-time understanding and decision-making. Leveraging the latest technologies and tools, our dedicated team collaborates closely with clients to address global challenges effectively."
   },
@@ -55,7 +55,7 @@
     "p1": "iTechs Arabia is a technology company delivering innovative solutions tailored to the evolving needs of organisations across different industries.",
     "p2": "Through strong technical expertise and strategic partnerships with leading technology providers, we offer reliable, scalable, and cost-effective solutions. Our team works closely with each client to understand their requirements and ensure every solution is practical, adaptable, and aligned with their long-term goals.",
     "p3": "Persistence, commitment, and transparency are central to how we operate, guiding our relationships and every project we deliver."
-    },
+  },
   "visionMission": {
     "visionTitle": "Vision",
     "visionText": "To become a trusted leader in technology and data solutions, recognised for making advanced technologies more accessible, reliable, and valuable to organisations.",
@@ -107,7 +107,7 @@
     "backendLayer": "Backend Layer",
     "dataWarehouse": "Data Warehouse"
   },
-    "SolutionsSeo": {
+  "SolutionsSeo": {
     "title": "Our Solutions",
     "description": "Explore iTechs Arabia's full range of cutting-edge technological solutions, from geospatial systems to defense command & control and VR/AR."
   },
@@ -116,7 +116,254 @@
     "subtitle": "Explore our full range of cutting-edge technological solutions.",
     "moreInfoAriaLabel": "More information about {title}"
   },
-    "ProductsSeo": {
+  "solutions": {
+    "sections": {
+      "whatWeDeliver": "What We Deliver",
+      "whereWeDeploy": "Where We Deploy",
+      "outcomes": "Outcomes You Can Expect",
+      "gisUsability": "GIS Usability"
+    },
+    "items": {
+      "geospatialSolutions": {
+        "title": "GEOSAPATIAL SOLUTIONS",
+        "description": "Transform location data into meaningful intelligence using Esri technology, revealing patterns, opportunities and smarter ways forward.",
+        "detailedDescription": [
+          "iTechs Arabia delivers advanced geospatial solutions that help organisations better understand their assets, operations and environments through location intelligence. By combining geographic information systems, real-time data, digital mapping and spatial analytics, we transform complex information into clear, actionable insights.",
+          "Our solutions support urban planning, infrastructure and asset management, environmental monitoring, logistics, public safety, emergency response and field operations—helping organisations make informed decisions."
+        ],
+        "gisUsability": [
+          {
+            "category": "Government, Defence & Public Sector",
+            "items": [
+              "Government and public sector agencies",
+              "Defence and security organisations",
+              "Disaster management and emergency response organisations",
+              "Healthcare and public health agencies"
+            ]
+          },
+          {
+            "category": "Urban Development, Real Estate & Construction",
+            "items": [
+              "Urban planning and smart city development authorities",
+              "Real estate and property development",
+              "Construction and infrastructure development"
+            ]
+          },
+          {
+            "category": "Energy, Utilities & Natural Resources",
+            "items": [
+              "Utilities (electricity, water, gas)",
+              "Oil and gas industry",
+              "Mining and extractive industries"
+            ]
+          },
+          {
+            "category": "Transportation, Aviation & Maritime",
+            "items": [
+              "Transportation and logistics companies",
+              "Aviation and airport authorities",
+              "Maritime and port authorities"
+            ]
+          },
+          {
+            "category": "Telecommunications & Digital Infrastructure",
+            "items": ["Telecommunications providers"]
+          },
+          {
+            "category": "Agriculture & Environmental Management",
+            "items": [
+              "Agriculture and agribusiness",
+              "Environmental and natural resource management agencies"
+            ]
+          }
+        ]
+      },
+      "securitySolutions": {
+        "title": "SECURITY SOLUTIONS",
+        "description": "Security solutions are designed to protect critical infrastructure, facilities and urban environments through advanced surveillance, access control and integrated monitoring systems.",
+        "detailedDescription": [
+          "As digital environments become increasingly connected, organisations need security solutions that are proactive, intelligent and resilient. iTechs Arabia provides comprehensive security solutions covering networks, applications, data, endpoints and critical infrastructure.",
+          "Our specialists assess vulnerabilities, identify potential threats and recommend the technologies and processes required to strengthen security across the organisation. From prevention and continuous monitoring to threat detection, digital investigation and incident response, we help clients protect their critical assets and maintain operational continuity."
+        ],
+        "whatWeDeliver": [
+          {
+            "title": "Video Surveillance Systems",
+            "description": "Advanced CCTV and video analytics platforms that enable real-time monitoring and intelligent security management."
+          },
+          {
+            "title": "Access Control Systems",
+            "description": "Secure access management solutions designed to regulate and monitor entry across buildings, campuses and critical infrastructure."
+          },
+          {
+            "title": "Intrusion Detection Systems",
+            "description": "Solutions designed to identify and respond to unauthorised activity across secured environments."
+          },
+          {
+            "title": "Public Address Systems",
+            "description": "Systems designed to broadcast announcements and emergency notifications across facilities."
+          },
+          {
+            "title": "Intercom Systems",
+            "description": "Integrated communication systems supporting secure interaction between internal and external facility access points."
+          },
+          {
+            "title": "Integrated Security Management Platforms",
+            "description": "Centralised platforms that enable the monitoring and control of multiple security systems through a unified interface."
+          }
+        ]
+      },
+      "defenseCommandControl": {
+        "title": "DEFENSE COMMAND AND CONTROL APPLICATIONS",
+        "description": "A unified operational picture for faster decisions, coordinated action and greater mission control.",
+        "detailedDescription": [
+          "iTechs Arabia develops secure command-and-control applications that provide defence and governmental organisations with a unified view of complex operations. Our solutions bring together live data, geospatial intelligence, communications, surveillance systems and field information within one centralised platform.",
+          "This enables decision-makers to monitor events in real time, evaluate developing scenarios, coordinate teams and respond with greater speed and precision. Each solution is designed around the organisation's operational structure, security requirements and mission objectives."
+        ],
+        "whatWeDeliver": [
+          {
+            "title": "Operations Centres",
+            "description": "Centralised control environments designed to manage large-scale infrastructure and operations."
+          },
+          {
+            "title": "Video Wall Systems",
+            "description": "Large-scale visualisation platforms designed to display real-time operational data and monitoring dashboards."
+          },
+          {
+            "title": "Integrated Monitoring Platforms",
+            "description": "Software platforms that aggregate data from multiple systems and provide centralised operational oversight."
+          },
+          {
+            "title": "Incident Response Systems",
+            "description": "Tools designed to manage operational incidents and coordinate rapid response."
+          }
+        ],
+        "whereWeDeploy": [
+          "Government command centres",
+          "Utility and transportation operators",
+          "Enterprise SOC and NOC facilities",
+          "Mega-event and venue control rooms"
+        ],
+        "outcomes": [
+          "Faster, coordinated decisions",
+          "A single pane of glass across operational silos",
+          "Resilient, round-the-clock operations"
+        ]
+      },
+      "dataManagement": {
+        "title": "DATA MANAGEMENT AND ANALYTICS SERVICES",
+        "description": "Turn fragmented information into trusted intelligence that supports confident and measurable decisions.",
+        "detailedDescription": [
+          "iTechs Arabia helps organisations unlock the full value of their data by transforming fragmented information into a secure, structured and reliable strategic asset."
+        ],
+        "whatWeDeliver": [
+          "Data integration",
+          "Cleansing",
+          "Migration",
+          "Governance",
+          "Warehousing",
+          "Visualisation",
+          "Automated Reporting",
+          "Advanced analytics"
+        ],
+        "closingParagraph": "We create centralised data environments and intuitive dashboards that provide decision-makers with a clear and timely understanding of organisational performance. By replacing disconnected information and manual reporting with trusted insights, we help clients recognise trends, uncover opportunities and anticipate potential challenges."
+      },
+      "integrationServicesIot": {
+        "title": "INTEGRATION SERVICES AND IoT",
+        "description": "Bringing technologies, infrastructure and people together within one seamless operational ecosystem.",
+        "detailedDescription": [
+          "Our integration and IoT solutions connect physical assets with digital platforms, providing organisations with real-time visibility into their environments and operations.",
+          "Through intelligent sensors, connected devices, communication networks and centralised monitoring platforms, iTechs Arabia enables clients to collect, exchange and act on live operational data. Our solutions support smart cities, buildings, utilities, industrial facilities, transportation networks and environmental systems—helping organisations automate processes, improve maintenance and reduce operational inefficiencies.",
+          "These solutions support government smart-city initiatives such as traffic congestion management, improved emergency response, greater energy efficiency, infrastructure monitoring and enhanced environmental sustainability—enabling government entities to deliver more efficient and transparent services to citizens."
+        ],
+        "whatWeDeliver": [
+          {
+            "title": "Smart Lighting Systems",
+            "description": "Connected lighting infrastructure designed to optimise energy consumption and improve public safety."
+          },
+          {
+            "title": "Smart Parking Solutions",
+            "description": "Digital parking management systems designed to reduce congestion and improve traffic flow."
+          },
+          {
+            "title": "Smart Metering Systems",
+            "description": "Advanced monitoring systems for water, electricity and energy consumption."
+          },
+          {
+            "title": "Environmental Monitoring Systems",
+            "description": "Sensor-based systems designed to monitor environmental conditions such as air quality, noise levels and temperature."
+          },
+          {
+            "title": "IoT Platforms",
+            "description": "Integrated platforms that collect and analyse data from connected devices to support intelligent decision-making."
+          },
+          {
+            "title": "Asset Tracking Systems",
+            "description": "Real-time tracking solutions designed to monitor and manage critical infrastructure and assets."
+          }
+        ],
+        "whereWeDeploy": [
+          "New cities and master-planned communities",
+          "Government smart-city programmes",
+          "Campuses and industrial parks",
+          "Real estate developers and facility-management operators"
+        ],
+        "outcomes": [
+          "Lower operating costs",
+          "Greater occupant and citizen satisfaction",
+          "Measurable sustainability gains",
+          "Enhanced urban sustainability and data-driven decision-making"
+        ]
+      },
+      "digitalTwin": {
+        "title": "DIGITAL TWIN",
+        "description": "A digital twin is a real-time virtual replica of a physical asset, system, or environment that enables continuous monitoring, analysis, and optimisation.",
+        "detailedDescription": [
+          "iTechs Arabia develops advanced digital twin solutions that create dynamic, real-time 3D replicas of physical assets, infrastructure and environments. Built with Unity and GIS, the solutions are continuously enriched with live IoT, operational and historical data.",
+          "Using real-time data integration and simulation, the digital twin provides an accurate live view of assets and operations. It supports monitoring, historical trends, alerts and interactive visualisation, while enabling organisations to test scenarios, assess risks and predict potential failures before they occur.",
+          "From smart buildings and industrial facilities to transportation networks and urban environments, our digital twin solutions help organisations improve operational efficiency, reduce downtime, enhance safety and make faster, data-driven decisions."
+        ],
+        "whatWeDeliver": [
+          {
+            "title": "Real-Time 3D Digital Models",
+            "description": "Dynamic 3D environments that replicate physical assets, infrastructure and entire environments in real time."
+          },
+          {
+            "title": "GIS-Integrated Digital Twins",
+            "description": "Digital twin environments combined with GIS to provide accurate geospatial context for every asset and system."
+          },
+          {
+            "title": "Live IoT and Operational Data Integration",
+            "description": "Continuous integration of live IoT sensor data, operational systems and historical datasets to keep the digital twin updated."
+          },
+          {
+            "title": "Real-Time Engine Simulation",
+            "description": "Simulation of engine data generated through Python and continuously transmitted to a cloud PostgreSQL database, with Unity applications receiving live updates."
+          },
+          {
+            "title": "Interactive Asset and Engine Visualisation",
+            "description": "Interactive visualisation of physical assets and engine components, with live operational data such as RPM, torque, power, temperatures, pressures, fuel-system data and vibration."
+          },
+          {
+            "title": "Historical Trends, Alerts and Thermal Visualisation",
+            "description": "Display of historical data trends, active alerts and dynamic thermal visualisations directly within the 3D model."
+          },
+          {
+            "title": "Scenario Simulation and Stress Testing",
+            "description": "Advanced simulation capabilities for stress-testing infrastructure, simulating environmental conditions, predicting equipment failures and evaluating operational changes."
+          },
+          {
+            "title": "Data-Driven Decision Support",
+            "description": "Real-time interaction and visualisation of expected outcomes to help decision-makers optimise strategies using data-driven insights."
+          },
+          {
+            "title": "Operational Intelligence Across Complex Environments",
+            "description": "Digital twin platforms for smart buildings, industrial plants, transportation networks and city-scale ecosystems, supporting improved efficiency, reduced downtime, enhanced safety and predictive decision-making."
+          }
+        ]
+      }
+    }
+  },
+  "ProductsSeo": {
     "title": "Our Products",
     "description": "Discover the products offered by iTechs Arabia."
   },
@@ -127,260 +374,260 @@
   },
   "products": {
     "sections": {
-    "whatWeDeliver": "What We Deliver",
-    "whereWeDeploy": "Where We Deploy",
-    "outcomes": "Outcomes You Can Expect",
-    "systemComponents": "System Components",
-    "integrationCapabilities": "Integration Capabilities"
-  },
-  "items": {
-    "artificialIntelligence": {
-      "title": "ARTIFICIAL INTELLIGENCE",
-      "description": "Turn complex data into intelligent action through AI solutions designed around your organisation’s operations and objectives.",
-      "detailedDescription": [
-        "iTechs Arabia develops customised artificial intelligence products that help organisations automate complex processes, uncover patterns and make faster, data-driven decisions.",
-        "By combining machine learning, natural language processing, computer vision, predictive analytics and geospatial intelligence, we transform operational data into practical tools that support users across different departments and levels of decision-making.",
-        "Our AI products are designed around each organisation’s existing systems, workflows and data environment. They can operate independently or integrate with dashboards, command-and-control platforms, GIS applications, enterprise systems and IoT infrastructure."
-      ],
-      "whatWeDeliver": [
-        {
-          "title": "Intelligent Decision-Support Systems",
-          "description": "AI-powered tools that analyse multiple data sources and provide users with relevant insights, alerts and recommended actions."
-        },
-        {
-          "title": "Predictive Analytics",
-          "description": "Models that identify trends, forecast future conditions and help organisations anticipate operational risks and requirements."
-        },
-        {
-          "title": "AI Assistants and Knowledge Systems",
-          "description": "Secure digital assistants that help users search organisational knowledge, analyse documents, generate reports and access information more efficiently."
-        },
-        {
-          "title": "Computer Vision",
-          "description": "Intelligent image and video analysis for object detection, classification, monitoring and automated visual inspection."
-        },
-        {
-          "title": "Process Automation",
-          "description": "AI-enabled workflows that reduce repetitive manual tasks and improve consistency across organisational processes."
-        },
-        {
-          "title": "Geospatial AI",
-          "description": "Advanced analysis combining artificial intelligence with location data to identify spatial patterns, monitor change and support planning."
-        }
-      ],
-      "whereWeDeploy": [
-        "Government and public-sector organisations",
-        "Defence and security environments",
-        "Smart cities and infrastructure operators",
-        "Utilities and industrial organisations",
-        "Large enterprises and operational centres"
-      ],
-      "outcomes": [
-        "Faster and more informed decisions",
-        "Reduced manual processing and reporting",
-        "Improved forecasting and risk identification",
-        "Greater value from existing organisational data",
-        "Scalable AI capabilities aligned with operational needs"
-      ]
+      "whatWeDeliver": "What We Deliver",
+      "whereWeDeploy": "Where We Deploy",
+      "outcomes": "Outcomes You Can Expect",
+      "systemComponents": "System Components",
+      "integrationCapabilities": "Integration Capabilities"
     },
-    "planningTrainingSimulation": {
-      "title": "PLANNING, TRAINING & SIMULATION",
-      "description": "Plan smarter, train realistically and validate critical decisions before they are implemented in the field.",
-      "detailedDescription": [
-        "The iTechs Arabia Planning, Training & Simulation platform is a geospatially enabled system developed to support planning, terrain analysis, scenario development, training and performance evaluation.",
-        "The platform allows officers, commanders and trainees to study terrain, assess tactical conditions and compare different operational alternatives within a secure digital environment. Plans can be developed, visualised and simulated before implementation, allowing users to evaluate their effectiveness and understand the potential consequences of each decision.",
-        "The system also supports decision-makers across strategic, operational and tactical levels by creating a centralised information environment that can integrate with existing or future systems. Its flexible architecture enables the platform to evolve alongside operational requirements and emerging technologies."
-      ],
-      "whatWeDeliver": [
-        {
-          "title": "Topographic and Tactical Analysis",
-          "description": "Tools for analysing distance, area, elevation, slope, field of view, visibility and other terrain characteristics that influence planning."
-        },
-        {
-          "title": "Scenario Planning and Simulation",
-          "description": "Digital environments for creating, testing and comparing operational scenarios before they are applied in real conditions."
-        },
-        {
-          "title": "Virtual Training Environments",
-          "description": "Immersive simulations that allow trainees to practise decision-making within realistic scenarios without the cost and risk of live exercises."
-        },
-        {
-          "title": "Strategic Scenario Library",
-          "description": "A structured collection of configurable scenarios that can be adapted to different objectives, environments and training levels."
-        },
-        {
-          "title": "Weather and Environmental Analysis",
-          "description": "Integration of weather and environmental conditions to help users understand how changing factors may influence operations."
-        },
-        {
-          "title": "Military Symbol Library",
-          "description": "A configurable library of military symbols supporting different doctrines and operational requirements."
-        },
-        {
-          "title": "Training and Performance Evaluation",
-          "description": "Tools for monitoring trainee decisions, evaluating performance and reviewing how plans were developed and implemented."
-        },
-        {
-          "title": "Systems Integration",
-          "description": "Integration with command-and-control platforms, operational assets and existing or future specialised applications."
-        }
-      ],
-      "whereWeDeploy": [
-        "Military academies and training institutions",
-        "Command and staff colleges",
-        "Operational planning units",
-        "Defence training centres",
-        "Governmental security organisations"
-      ],
-      "outcomes": [
-        "More realistic and measurable training",
-        "Stronger planning and decision-making capabilities",
-        "Safer and more cost-effective scenario testing",
-        "Improved understanding of terrain and operational conditions",
-        "A flexible platform that can evolve with future requirements",
-        "Greater control over organisational data and system development"
-      ]
-    },
-    "workforceManagement": {
-      "title": "WORKFORCE MANAGEMENT",
-      "description": "Turn every request, task and field team into one connected, visible and measurable service operation.",
-      "detailedDescription": [
-        "iTechs Arabia’s Workforce Management platform connects service requests, supervisors, field teams and operational data within one unified digital environment.",
-        "The platform enables organisations to receive requests, assign tasks, monitor employees and contractors, track service progress and verify completion in real time. Through GIS-enabled dispatching, mobile workforce applications and centralised dashboards, managers gain full visibility over who is working, where they are located and how effectively each task is being completed.",
-        "Our business analysts work closely with every client to understand their existing processes, identify operational gaps and map the complete service journey. Based on this analysis, we configure the platform’s workflows, task categories, escalation rules, performance indicators and dashboards to match the organisation’s actual requirements rather than forcing teams to follow a standardised process."
-      ],
-      "whatWeDeliver": [
-        {
-          "title": "Resident and Service Request Portal",
-          "description": "A digital portal or mobile interface that allows residents, employees or facility teams to submit and track service requests."
-        },
-        {
-          "title": "Smart Work-Order Management",
-          "description": "Automated creation, assignment, escalation and tracking of maintenance, housekeeping and operational tasks."
-        },
-        {
-          "title": "Geo-Enabled Workforce Dispatching",
-          "description": "Intelligent assignment of tasks based on employee location, availability, skills and operational priority."
-        },
-        {
-          "title": "Field Workforce Mobile Application",
-          "description": "A mobile platform providing employees with assigned tasks, navigation, checklists, media capture and instant status updates."
-        },
-        {
-          "title": "Supervisor and Control-Centre Dashboards",
-          "description": "Real-time visibility over ongoing tasks, employee locations, incidents, delays and service performance."
-        },
-        {
-          "title": "Concierge Service Management",
-          "description": "Management of resident and guest requests, including housekeeping, deliveries, valet assistance and community services."
-        },
-        {
-          "title": "Predictive and Preventive Maintenance",
-          "description": "Planned maintenance workflows supported by operational schedules, asset information and IoT-generated alerts."
-        },
-        {
-          "title": "Performance and SLA Analytics",
-          "description": "Dashboards and reports that monitor response times, completion rates, workforce productivity, service quality and customer feedback."
-        }
-      ],
-      "integrationCapabilities": [
-        "GIS and Esri platforms",
-        "Building Management Systems",
-        "IoT sensors and connected assets",
-        "Customer relationship management systems",
-        "Resident experience applications",
-        "Security and video-management platforms",
-        "Smart irrigation and water-management systems"
-      ],
-      "whereWeDeploy": [
-        "Luxury compounds and gated communities",
-        "Hotels and resorts",
-        "Real estate developments",
-        "Facility-management organisations",
-        "Utilities and infrastructure operators",
-        "Smart-city authorities"
-      ],
-      "outcomes": [
-        "Faster service response and task completion",
-        "Greater workforce visibility and accountability",
-        "Improved employee and contractor productivity",
-        "Transparent SLA and performance monitoring",
-        "Reduced operational and maintenance costs",
-        "A more consistent resident and customer experience"
-      ]
-    },
-    "artilleryTacticalOperationNavigation": {
-      "title": "ARTILLERY TACTICAL OPERATION NAVIGATION",
-      "description": "A connected artillery planning, navigation and fire-control environment designed to strengthen coordination, visibility and operational precision.",
-      "detailedDescription": [
-        "Artillery Tactical Operation & Navigation, or ATON, is an integrated artillery planning, management and fire-control platform developed to support the coordination of artillery units and assets within one secure operational environment.",
-        "The system connects commanders, platoon leaders, forward observers and weapon units, enabling them to exchange operational information and maintain a shared understanding of missions, assets, terrain and field conditions.",
-        "ATON combines geospatial analysis, artillery asset management, mission planning, navigation, fire-control support and operational reporting. It helps commanders assess terrain, identify appropriate positions and routes, coordinate available resources and maintain visibility over developing operations."
-      ],
-      "whatWeDeliver": [
-        {
-          "title": "Artillery Asset Management",
-          "description": "Centralised management of artillery assets, including available units, equipment, ammunition and supporting resources."
-        },
-        {
-          "title": "Mission and Fire Planning",
-          "description": "Tools that support the development and coordination of artillery plans according to mission objectives, available resources and operational priorities."
-        },
-        {
-          "title": "Topographic and Tactical Studies",
-          "description": "Terrain-analysis capabilities covering visibility, elevation, distance, area, field of view and other geographic factors affecting operations."
-        },
-        {
-          "title": "Position and Route Selection",
-          "description": "Geospatial tools supporting the identification of suitable positions and movement routes for artillery units and supporting assets."
-        },
-        {
-          "title": "Fire-Control Coordination",
-          "description": "A connected information environment that supports the secure exchange of mission data between commanders, observers and weapon units."
-        },
-        {
-          "title": "Target Information Management",
-          "description": "Tools for collecting, organising and displaying relevant target information from authorised operational and intelligence sources."
-        },
-        {
-          "title": "Safety Operations",
-          "description": "Procedures and system controls designed to improve coordination, reduce operational risks and support safer artillery activities."
-        },
-        {
-          "title": "Operational Dashboards and Reporting",
-          "description": "Dashboards and reports that provide visibility over missions, deployed resources, operational activity and system performance."
-        },
-        {
-          "title": "Navigation and Shared Operational Mapping",
-          "description": "Interactive maps displaying relevant operational positions, routes, assets and field information within a unified geographic view."
-        }
-      ],
-      "systemComponents": [
-        "Artillery management",
-        "Fire planning and control",
-        "Topographic and tactical study",
-        "Mortar fire-control system",
-        "Operational dashboards and reporting",
-        "Administrative and system-management tools"
-      ],
-      "whereWeDeploy": [
-        "Artillery command units",
-        "Fire-direction and control centres",
-        "Forward observation teams",
-        "Artillery planning and coordination units",
-        "Military training and evaluation environments"
-      ],
-      "outcomes": [
-        "Improved coordination between artillery components",
-        "Greater visibility over assets and operational information",
-        "Faster and more structured information exchange",
-        "More informed terrain and position assessment",
-        "Improved reporting and mission evaluation",
-        "Reduced operational risk through clearer coordination"
-      ]
+    "items": {
+      "artificialIntelligence": {
+        "title": "ARTIFICIAL INTELLIGENCE",
+        "description": "Turn complex data into intelligent action through AI solutions designed around your organisation’s operations and objectives.",
+        "detailedDescription": [
+          "iTechs Arabia develops customised artificial intelligence products that help organisations automate complex processes, uncover patterns and make faster, data-driven decisions.",
+          "By combining machine learning, natural language processing, computer vision, predictive analytics and geospatial intelligence, we transform operational data into practical tools that support users across different departments and levels of decision-making.",
+          "Our AI products are designed around each organisation’s existing systems, workflows and data environment. They can operate independently or integrate with dashboards, command-and-control platforms, GIS applications, enterprise systems and IoT infrastructure."
+        ],
+        "whatWeDeliver": [
+          {
+            "title": "Intelligent Decision-Support Systems",
+            "description": "AI-powered tools that analyse multiple data sources and provide users with relevant insights, alerts and recommended actions."
+          },
+          {
+            "title": "Predictive Analytics",
+            "description": "Models that identify trends, forecast future conditions and help organisations anticipate operational risks and requirements."
+          },
+          {
+            "title": "AI Assistants and Knowledge Systems",
+            "description": "Secure digital assistants that help users search organisational knowledge, analyse documents, generate reports and access information more efficiently."
+          },
+          {
+            "title": "Computer Vision",
+            "description": "Intelligent image and video analysis for object detection, classification, monitoring and automated visual inspection."
+          },
+          {
+            "title": "Process Automation",
+            "description": "AI-enabled workflows that reduce repetitive manual tasks and improve consistency across organisational processes."
+          },
+          {
+            "title": "Geospatial AI",
+            "description": "Advanced analysis combining artificial intelligence with location data to identify spatial patterns, monitor change and support planning."
+          }
+        ],
+        "whereWeDeploy": [
+          "Government and public-sector organisations",
+          "Defence and security environments",
+          "Smart cities and infrastructure operators",
+          "Utilities and industrial organisations",
+          "Large enterprises and operational centres"
+        ],
+        "outcomes": [
+          "Faster and more informed decisions",
+          "Reduced manual processing and reporting",
+          "Improved forecasting and risk identification",
+          "Greater value from existing organisational data",
+          "Scalable AI capabilities aligned with operational needs"
+        ]
+      },
+      "planningTrainingSimulation": {
+        "title": "PLANNING, TRAINING & SIMULATION",
+        "description": "Plan smarter, train realistically and validate critical decisions before they are implemented in the field.",
+        "detailedDescription": [
+          "The iTechs Arabia Planning, Training & Simulation platform is a geospatially enabled system developed to support planning, terrain analysis, scenario development, training and performance evaluation.",
+          "The platform allows officers, commanders and trainees to study terrain, assess tactical conditions and compare different operational alternatives within a secure digital environment. Plans can be developed, visualised and simulated before implementation, allowing users to evaluate their effectiveness and understand the potential consequences of each decision.",
+          "The system also supports decision-makers across strategic, operational and tactical levels by creating a centralised information environment that can integrate with existing or future systems. Its flexible architecture enables the platform to evolve alongside operational requirements and emerging technologies."
+        ],
+        "whatWeDeliver": [
+          {
+            "title": "Topographic and Tactical Analysis",
+            "description": "Tools for analysing distance, area, elevation, slope, field of view, visibility and other terrain characteristics that influence planning."
+          },
+          {
+            "title": "Scenario Planning and Simulation",
+            "description": "Digital environments for creating, testing and comparing operational scenarios before they are applied in real conditions."
+          },
+          {
+            "title": "Virtual Training Environments",
+            "description": "Immersive simulations that allow trainees to practise decision-making within realistic scenarios without the cost and risk of live exercises."
+          },
+          {
+            "title": "Strategic Scenario Library",
+            "description": "A structured collection of configurable scenarios that can be adapted to different objectives, environments and training levels."
+          },
+          {
+            "title": "Weather and Environmental Analysis",
+            "description": "Integration of weather and environmental conditions to help users understand how changing factors may influence operations."
+          },
+          {
+            "title": "Military Symbol Library",
+            "description": "A configurable library of military symbols supporting different doctrines and operational requirements."
+          },
+          {
+            "title": "Training and Performance Evaluation",
+            "description": "Tools for monitoring trainee decisions, evaluating performance and reviewing how plans were developed and implemented."
+          },
+          {
+            "title": "Systems Integration",
+            "description": "Integration with command-and-control platforms, operational assets and existing or future specialised applications."
+          }
+        ],
+        "whereWeDeploy": [
+          "Military academies and training institutions",
+          "Command and staff colleges",
+          "Operational planning units",
+          "Defence training centres",
+          "Governmental security organisations"
+        ],
+        "outcomes": [
+          "More realistic and measurable training",
+          "Stronger planning and decision-making capabilities",
+          "Safer and more cost-effective scenario testing",
+          "Improved understanding of terrain and operational conditions",
+          "A flexible platform that can evolve with future requirements",
+          "Greater control over organisational data and system development"
+        ]
+      },
+      "workforceManagement": {
+        "title": "WORKFORCE MANAGEMENT",
+        "description": "Turn every request, task and field team into one connected, visible and measurable service operation.",
+        "detailedDescription": [
+          "iTechs Arabia’s Workforce Management platform connects service requests, supervisors, field teams and operational data within one unified digital environment.",
+          "The platform enables organisations to receive requests, assign tasks, monitor employees and contractors, track service progress and verify completion in real time. Through GIS-enabled dispatching, mobile workforce applications and centralised dashboards, managers gain full visibility over who is working, where they are located and how effectively each task is being completed.",
+          "Our business analysts work closely with every client to understand their existing processes, identify operational gaps and map the complete service journey. Based on this analysis, we configure the platform’s workflows, task categories, escalation rules, performance indicators and dashboards to match the organisation’s actual requirements rather than forcing teams to follow a standardised process."
+        ],
+        "whatWeDeliver": [
+          {
+            "title": "Resident and Service Request Portal",
+            "description": "A digital portal or mobile interface that allows residents, employees or facility teams to submit and track service requests."
+          },
+          {
+            "title": "Smart Work-Order Management",
+            "description": "Automated creation, assignment, escalation and tracking of maintenance, housekeeping and operational tasks."
+          },
+          {
+            "title": "Geo-Enabled Workforce Dispatching",
+            "description": "Intelligent assignment of tasks based on employee location, availability, skills and operational priority."
+          },
+          {
+            "title": "Field Workforce Mobile Application",
+            "description": "A mobile platform providing employees with assigned tasks, navigation, checklists, media capture and instant status updates."
+          },
+          {
+            "title": "Supervisor and Control-Centre Dashboards",
+            "description": "Real-time visibility over ongoing tasks, employee locations, incidents, delays and service performance."
+          },
+          {
+            "title": "Concierge Service Management",
+            "description": "Management of resident and guest requests, including housekeeping, deliveries, valet assistance and community services."
+          },
+          {
+            "title": "Predictive and Preventive Maintenance",
+            "description": "Planned maintenance workflows supported by operational schedules, asset information and IoT-generated alerts."
+          },
+          {
+            "title": "Performance and SLA Analytics",
+            "description": "Dashboards and reports that monitor response times, completion rates, workforce productivity, service quality and customer feedback."
+          }
+        ],
+        "integrationCapabilities": [
+          "GIS and Esri platforms",
+          "Building Management Systems",
+          "IoT sensors and connected assets",
+          "Customer relationship management systems",
+          "Resident experience applications",
+          "Security and video-management platforms",
+          "Smart irrigation and water-management systems"
+        ],
+        "whereWeDeploy": [
+          "Luxury compounds and gated communities",
+          "Hotels and resorts",
+          "Real estate developments",
+          "Facility-management organisations",
+          "Utilities and infrastructure operators",
+          "Smart-city authorities"
+        ],
+        "outcomes": [
+          "Faster service response and task completion",
+          "Greater workforce visibility and accountability",
+          "Improved employee and contractor productivity",
+          "Transparent SLA and performance monitoring",
+          "Reduced operational and maintenance costs",
+          "A more consistent resident and customer experience"
+        ]
+      },
+      "artilleryTacticalOperationNavigation": {
+        "title": "ARTILLERY TACTICAL OPERATION NAVIGATION",
+        "description": "A connected artillery planning, navigation and fire-control environment designed to strengthen coordination, visibility and operational precision.",
+        "detailedDescription": [
+          "Artillery Tactical Operation & Navigation, or ATON, is an integrated artillery planning, management and fire-control platform developed to support the coordination of artillery units and assets within one secure operational environment.",
+          "The system connects commanders, platoon leaders, forward observers and weapon units, enabling them to exchange operational information and maintain a shared understanding of missions, assets, terrain and field conditions.",
+          "ATON combines geospatial analysis, artillery asset management, mission planning, navigation, fire-control support and operational reporting. It helps commanders assess terrain, identify appropriate positions and routes, coordinate available resources and maintain visibility over developing operations."
+        ],
+        "whatWeDeliver": [
+          {
+            "title": "Artillery Asset Management",
+            "description": "Centralised management of artillery assets, including available units, equipment, ammunition and supporting resources."
+          },
+          {
+            "title": "Mission and Fire Planning",
+            "description": "Tools that support the development and coordination of artillery plans according to mission objectives, available resources and operational priorities."
+          },
+          {
+            "title": "Topographic and Tactical Studies",
+            "description": "Terrain-analysis capabilities covering visibility, elevation, distance, area, field of view and other geographic factors affecting operations."
+          },
+          {
+            "title": "Position and Route Selection",
+            "description": "Geospatial tools supporting the identification of suitable positions and movement routes for artillery units and supporting assets."
+          },
+          {
+            "title": "Fire-Control Coordination",
+            "description": "A connected information environment that supports the secure exchange of mission data between commanders, observers and weapon units."
+          },
+          {
+            "title": "Target Information Management",
+            "description": "Tools for collecting, organising and displaying relevant target information from authorised operational and intelligence sources."
+          },
+          {
+            "title": "Safety Operations",
+            "description": "Procedures and system controls designed to improve coordination, reduce operational risks and support safer artillery activities."
+          },
+          {
+            "title": "Operational Dashboards and Reporting",
+            "description": "Dashboards and reports that provide visibility over missions, deployed resources, operational activity and system performance."
+          },
+          {
+            "title": "Navigation and Shared Operational Mapping",
+            "description": "Interactive maps displaying relevant operational positions, routes, assets and field information within a unified geographic view."
+          }
+        ],
+        "systemComponents": [
+          "Artillery management",
+          "Fire planning and control",
+          "Topographic and tactical study",
+          "Mortar fire-control system",
+          "Operational dashboards and reporting",
+          "Administrative and system-management tools"
+        ],
+        "whereWeDeploy": [
+          "Artillery command units",
+          "Fire-direction and control centres",
+          "Forward observation teams",
+          "Artillery planning and coordination units",
+          "Military training and evaluation environments"
+        ],
+        "outcomes": [
+          "Improved coordination between artillery components",
+          "Greater visibility over assets and operational information",
+          "Faster and more structured information exchange",
+          "More informed terrain and position assessment",
+          "Improved reporting and mission evaluation",
+          "Reduced operational risk through clearer coordination"
+        ]
+      }
     }
-  }
-},
+  },
   "ContactSeo": {
     "title": "Contact Us",
     "description": "Get in touch with iTechs Arabia and we'll get back to you as soon as possible."

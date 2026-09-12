@@ -16,8 +16,7 @@ export async function generateMetadata({ params }) {
   });
 }
 
-export default async function SolutionsPage({ params }) {
-  const { locale } = await params;
+export default async function SolutionsPage() {
   const t = await getTranslations("solutionsPage");
 
   return (
@@ -26,7 +25,6 @@ export default async function SolutionsPage({ params }) {
         aria-label={t("title")}
         className="w-full min-h-screen bg-itechsSkyBlue overflow-hidden flex flex-col lg:flex-row"
       >
-
         {/* Top bar — mobile only */}
         <div className="shrink-0 h-16 overflow-hidden lg:hidden">
           <Image
@@ -59,7 +57,7 @@ export default async function SolutionsPage({ params }) {
           <p className={`${BODY_TEXT} text-itechsBlue mb-12`}>
             {t("subtitle")}
           </p>
-          <SolutionsList locale={locale} />
+          <SolutionsList />
         </div>
 
         {/* Right column — desktop only */}
@@ -85,7 +83,6 @@ export default async function SolutionsPage({ params }) {
             aria-hidden="true"
           />
         </div>
-
       </section>
     </main>
   );
