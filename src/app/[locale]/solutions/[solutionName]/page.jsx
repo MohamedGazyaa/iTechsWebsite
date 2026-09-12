@@ -72,7 +72,7 @@ export default async function SolutionDetailPage({ params }) {
             alt={t("title")}
             width={64}
             height={64}
-            className="shrink-0"
+            className="shrink-0 bg-itechsSkyBlue"
           />
           <h1 className={`${HEADING_SECTION} text-itechsTeal`}>{t("title")}</h1>
         </div>
